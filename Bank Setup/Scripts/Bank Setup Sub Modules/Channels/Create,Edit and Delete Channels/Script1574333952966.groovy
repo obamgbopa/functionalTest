@@ -42,11 +42,13 @@ WebUI.click(findTestObject('Channels Spy/Page_icon-app/div_channel_id'))
 
 WebUI.click(findTestObject('Channels Spy/Page_icon-app/li_ATM'))
 
-WebUI.click(findTestObject('Channels Spy/Page_icon-app/div_spacer_code'))
+WebUI.click(findTestObject('Channels Spy/channel changes/Page_icon-app/svg'))
 
-WebUI.delay(10)
+WebUI.click(findTestObject('Channels Spy/channel changes/Page_icon-app/button_Search'))
 
-WebUI.click(findTestObject('Channels Spy/Page_icon-app/li_100100 - INCOME ACCOUNT'))
+WebUI.click(findTestObject('Channels Spy/channel changes/Page_icon-app/a_283'))
+
+WebUI.click(findTestObject('Channels Spy/channel changes/Page_icon-app/button_Select'))
 
 WebUI.setText(findTestObject('Object Repository/Channels/Page_icon-app/textarea_Description_ant-input'), 'AUTOMATED TESTING')
 
