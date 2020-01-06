@@ -53,16 +53,16 @@
       <testCaseId>Test Cases/Bank Setup Sub Modules/Branch Group/Creating Branch Group</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>e7164cb5-5429-4640-90a9-5fc0d5f37034</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Bank Setup Sub Modules/Branch Group/Deleting Branch Group</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>f1680364-9d21-4f55-ba8b-1119bf493c2e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Bank Setup Sub Modules/Branch Group/Editing Branch Group</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e7164cb5-5429-4640-90a9-5fc0d5f37034</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Bank Setup Sub Modules/Branch Group/Deleting Branch Group</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>7f4ab8b8-7173-47c0-96f5-c73481db7b3a</guid>
