@@ -16,22 +16,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+int num = GlobalVariable.num
 
-WebUI.navigateToUrl('http://192.168.5.46:9090/sso/sso/login/')
+Random rnd = new Random()
 
-WebUI.maximizeWindow()
+randomNum = rnd.nextInt(10 ** num)
 
-WebUI.setText(findTestObject('Object Repository/create sub gl/Page_Icon Login/input_WELCOME BACK_username'), 'TOMMIE')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/create sub gl/Page_Icon Login/input_WELCOME BACK_password'), 'RlZsoEm1HLfPO8dtOqKUMA==')
-
-WebUI.sendKeys(findTestObject('Object Repository/create sub gl/Page_Icon Login/input_WELCOME BACK_password'), Keys.chord(
-        Keys.ENTER))
-
-WebUI.click(findTestObject('Object Repository/create sub gl/Page_icon-app/div_Applications_item__icon'))
-
-WebUI.click(findTestObject('Object Repository/create sub gl/Page_icon-app/a_Build No_aside__toggler'))
+WebUI.callTestCase(findTestCase('Login/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/create sub gl/Page_icon-app/span_General Ledger'))
 
@@ -45,21 +36,24 @@ WebUI.click(findTestObject('Manage GL spy/Page_icon-app/button_HEADER_table__btn
 
 WebUI.click(findTestObject('Object Repository/create sub gl/Page_icon-app/a_Add Sub GL to                  AUTOMATED _00dd32'))
 
-WebUI.setText(findTestObject('Object Repository/create sub gl/Page_icon-app/input_Code_ant-input'), 'GLTEST2001')
+WebUI.setText(findTestObject('Object Repository/create sub gl/Page_icon-app/input_Code_ant-input'), 'GLTEST' + String.valueOf(
+        randomNum))
 
 WebUI.setText(findTestObject('Object Repository/create sub gl/Page_icon-app/input_Description_ant-input'), 'AUTOMATED SUB GL')
 
-WebUI.click(findTestObject('create sub gl spy/Page_icon-app/button_Node_ant-switch'))
+not_run: WebUI.click(findTestObject('create sub gl spy/Page_icon-app/button_Node_ant-switch'))
 
-WebUI.click(findTestObject('Object Repository/create sub gl/Page_icon-app/div_Currency Code'))
+not_run: WebUI.click(findTestObject('Object Repository/create sub gl/Page_icon-app/div_Currency Code'))
 
-WebUI.click(findTestObject('Object Repository/create sub gl/Page_icon-app/li_NGN - NIGERIAN NAIRA'))
+not_run: WebUI.click(findTestObject('Object Repository/create sub gl/Page_icon-app/li_NGN - NIGERIAN NAIRA'))
 
-WebUI.click(findTestObject('Object Repository/create sub gl/Page_icon-app/div_Branch Code'))
+not_run: WebUI.click(findTestObject('Object Repository/create sub gl/Page_icon-app/div_Branch Code'))
 
-WebUI.click(findTestObject('Object Repository/create sub gl/Page_icon-app/li_097 - OSHODIOLUPESI HOUSE'))
+not_run: WebUI.click(findTestObject('Object Repository/create sub gl/Page_icon-app/li_097 - OSHODIOLUPESI HOUSE'))
 
 WebUI.click(findTestObject('Object Repository/create sub gl/Page_icon-app/button_Create'))
+
+WebUI.verifyTextPresent('New Sub Gl created', false)
 
 WebUI.delay(2)
 
