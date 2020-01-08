@@ -16,21 +16,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('http://192.168.5.46:9090/sso/sso/login/')
-
-WebUI.maximizeWindow()
-
-WebUI.setText(findTestObject('Object Repository/Replicate GL/Page_Icon Login/input_WELCOME BACK_username'), 'TOMMIE')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Replicate GL/Page_Icon Login/input_WELCOME BACK_password'), 'RlZsoEm1HLfPO8dtOqKUMA==')
-
-WebUI.click(findTestObject('Object Repository/Replicate GL/Page_Icon Login/button_Login'))
-
-WebUI.click(findTestObject('Object Repository/Replicate GL/Page_icon-app/div_Applications_item__icon'))
-
-WebUI.click(findTestObject('Object Repository/Replicate GL/Page_icon-app/a_Build No_aside__toggler'))
+WebUI.callTestCase(findTestCase('Login/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Replicate GL/Page_icon-app/span_General Ledger'))
 
@@ -81,6 +67,12 @@ WebUI.click(findTestObject('Replicate GL spy/Page_icon-app/input_USD_ant-checkbo
 WebUI.click(findTestObject('Replicate GL spy/Page_icon-app/button_Confirm Selected Currency'))
 
 WebUI.click(findTestObject('Object Repository/Replicate GL/Page_icon-app/button_Replicate GL'))
+
+WebUI.delay(60)
+
+WebUI.verifyTextPresent('Successfully replicated', false)
+
+WebUI.delay(2)
 
 WebUI.closeBrowser()
 

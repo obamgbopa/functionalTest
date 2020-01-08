@@ -14,29 +14,20 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 
-int num = GlobalVariable.num
+WebUI.openBrowser('')
 
-Random rnd = new Random()
+WebUI.navigateToUrl('http://192.168.5.46:9090/sso/sso/login/')
 
-randomNum = rnd.nextInt(10 ** num)
+WebUI.maximizeWindow()
 
-WebUI.callTestCase(findTestCase('Login/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('Object Repository/Page_Icon Login/input_WELCOME BACK_username'), 'TOMMIE')
 
-WebUI.click(findTestObject('Object Repository/Page_icon-app/span_General Ledger'))
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_Icon Login/input_WELCOME BACK_password'), 'RlZsoEm1HLfPO8dtOqKUMA==')
 
-WebUI.click(findTestObject('Object Repository/Page_icon-app/button_Add General Ledger'))
+WebUI.click(findTestObject('Object Repository/Page_Icon Login/button_Login'))
 
-WebUI.setText(findTestObject('Object Repository/Page_icon-app/input_Code_ant-input ant-input-lg'), 'GLTEST' + String.valueOf(randomNum))
+WebUI.click(findTestObject('Object Repository/Page_icon-app/div_Applications_item__icon'))
 
-WebUI.setText(findTestObject('Object Repository/Page_icon-app/input_Decription_ant-input ant-input-lg'), 'AUTOMATED GL')
-
-WebUI.click(findTestObject('Object Repository/Page_icon-app/button_Create'))
-
-WebUI.verifyTextPresent('GL creation was successful', false)
-
-WebUI.delay(2)
-
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Object Repository/Page_icon-app/a_Build No_aside__toggler'))
 

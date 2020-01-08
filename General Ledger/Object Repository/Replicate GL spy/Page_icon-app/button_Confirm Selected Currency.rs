@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@type='button'])[23]</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='UNITED STATES'])[1]/following::button[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
