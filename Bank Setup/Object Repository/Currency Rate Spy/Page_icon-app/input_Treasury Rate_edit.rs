@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Negative Tolerance_new</name>
+   <name>input_Treasury Rate_edit</name>
    <tag></tag>
-   <elementGuidId>052ee661-252e-494d-8772-28e5d0856f98</elementGuidId>
+   <elementGuidId>957ef75c-40b4-46c8-b6ed-eb7a10a878b0</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Negative Tolerance'])[2]/following::input[1]</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Treasury Rate'])[2]/following::input[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -43,50 +43,57 @@
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>5</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[1]/body[1]/div[9]/div[1]/div[@class=&quot;ant-modal-wrap&quot;]/div[@class=&quot;ant-modal&quot;]/div[@class=&quot;ant-modal-content&quot;]/div[@class=&quot;ant-modal-body&quot;]/form[@class=&quot;ant-form ant-form-horizontal&quot;]/div[1]/div[@class=&quot;ant-row&quot;]/div[@class=&quot;ant-col-12&quot;]/span[1]/div[@class=&quot;ant-row ant-form-item ant-form-item-no-colon&quot;]/div[@class=&quot;ant-form-item-control-wrapper&quot;]/div[@class=&quot;ant-form-item-control has-success&quot;]/span[@class=&quot;ant-form-item-children&quot;]/input[@class=&quot;ant-input&quot;]</value>
+      <value>/html[1]/body[1]/div[9]/div[1]/div[@class=&quot;ant-modal-wrap&quot;]/div[@class=&quot;ant-modal&quot;]/div[@class=&quot;ant-modal-content&quot;]/div[@class=&quot;ant-modal-body&quot;]/form[@class=&quot;ant-form ant-form-horizontal&quot;]/div[1]/span[4]/div[@class=&quot;ant-row ant-form-item ant-form-item-no-colon&quot;]/div[@class=&quot;ant-form-item-control-wrapper&quot;]/div[@class=&quot;ant-form-item-control has-success&quot;]/span[@class=&quot;ant-form-item-children&quot;]/input[@class=&quot;ant-input&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//input[@value=''])[6]</value>
+      <value>(//input[@value='5'])[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Negative Tolerance'])[2]/following::input[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Treasury Rate'])[2]/following::input[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Positive Tolerance'])[2]/following::input[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Unit Rate'])[2]/following::input[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Submit'])[1]/preceding::input[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Positive Tolerance'])[2]/preceding::input[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='sentinelEnd'])[1]/preceding::input[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Negative Tolerance'])[2]/preceding::input[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/span/div/div[2]/div/span/input</value>
+      <value>//span[4]/div/div[2]/div/span/input</value>
    </webElementXpaths>
 </WebElementEntity>

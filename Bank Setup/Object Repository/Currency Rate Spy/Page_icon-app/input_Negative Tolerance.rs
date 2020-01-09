@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//input[@type='text'])[7]</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Negative Tolerance'])[1]/following::input[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

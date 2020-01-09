@@ -38,17 +38,25 @@ WebUI.click(findTestObject('Asset Classification Spy/Page_icon-app/li_Charge Ope
 
 WebUI.click(findTestObject('Object Repository/Asset Classification/Page_icon-app/button_Submit'))
 
+WebUI.verifyTextPresent('Loan Classifications is Created', false)
+
 WebUI.click(findTestObject('Object Repository/Asset Classification/Page_icon-app/button_OA_table__btn ant-btn ant-btn-primar_3d8e06'))
 
 WebUI.click(findTestObject('Object Repository/Asset Classification/Page_icon-app/a_Edit'))
 
 WebUI.click(findTestObject('Object Repository/Asset Classification/Page_icon-app/button_Edit'))
 
+WebUI.verifyTextPresent('Loan Classification is Updated', false)
+
 WebUI.click(findTestObject('Object Repository/Asset Classification/Page_icon-app/button_OA_table__btn ant-btn ant-btn-primar_3d8e06'))
 
 WebUI.click(findTestObject('Object Repository/Asset Classification/Page_icon-app/a_Delete'))
 
 WebUI.click(findTestObject('Object Repository/Asset Classification/Page_icon-app/button_Yes'))
+
+WebUI.verifyTextPresent('T is deleted', false)
+
+WebUI.delay(2)
 
 WebUI.closeBrowser()
 

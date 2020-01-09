@@ -34,5 +34,9 @@ WebUI.click(findTestObject('Branch Group/Page_icon-app/li_094 - NAVY TOWNMAMMY M
 
 WebUI.click(findTestObject('Object Repository/Creating and Deleting Branch Group/Page_icon-app/button_Submit'), FailureHandling.STOP_ON_FAILURE)
 
+WebUI.verifyTextPresent('Branch Group is Created', false)
+
+WebUI.delay(2)
+
 WebUI.closeBrowser()
 

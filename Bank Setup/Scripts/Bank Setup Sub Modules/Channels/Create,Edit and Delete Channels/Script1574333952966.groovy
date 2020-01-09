@@ -16,23 +16,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('http://192.168.5.46:9090/sso/sso/login/')
-
-WebUI.maximizeWindow()
-
-WebUI.setText(findTestObject('Object Repository/Channels/Page_Icon Login/input_WELCOME BACK_username'), 'TOMMIE')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Channels/Page_Icon Login/input_WELCOME BACK_password'), 'RlZsoEm1HLfPO8dtOqKUMA==')
-
-WebUI.click(findTestObject('Object Repository/Channels/Page_Icon Login/button_Login'))
-
-WebUI.click(findTestObject('Object Repository/Channels/Page_icon-app/div_Applications_item__icon'))
-
-WebUI.click(findTestObject('Object Repository/Channels/Page_icon-app/a_Branch_aside__toggler'))
-
-WebUI.click(findTestObject('Object Repository/Channels/Page_icon-app/span_Bank Setup'))
+WebUI.callTestCase(findTestCase('Bank Setup Default link/Bank_Setup_Default'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Channels/Page_icon-app/a_Channels'))
 
@@ -100,17 +84,23 @@ WebUI.click(findTestObject('Channels Spy/Page_icon-app/button_Add Terminal_toCre
 
 WebUI.click(findTestObject('Object Repository/Channels/Page_icon-app/button_Submit'))
 
+WebUI.delay(10)
+
 WebUI.click(findTestObject('Object Repository/Channels/Page_icon-app/button_AUTOMATED TESTING_table__btn ant-btn_779cfa'))
 
 WebUI.click(findTestObject('Object Repository/Channels/Page_icon-app/a_ Edit'))
 
 WebUI.click(findTestObject('Object Repository/Channels/Page_icon-app/button_Edit'))
 
+WebUI.delay(10)
+
 WebUI.click(findTestObject('Object Repository/Channels/Page_icon-app/button_AUTOMATED TESTING_table__btn ant-btn_779cfa'))
 
 WebUI.click(findTestObject('Object Repository/Channels/Page_icon-app/a_ Delete'))
 
 WebUI.click(findTestObject('Object Repository/Channels/Page_icon-app/button_Yes'))
+
+WebUI.delay(10)
 
 WebUI.closeBrowser()
 

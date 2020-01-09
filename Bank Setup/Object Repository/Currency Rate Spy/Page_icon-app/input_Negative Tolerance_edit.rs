@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Negative Tolerance_new</name>
+   <name>input_Negative Tolerance_edit</name>
    <tag></tag>
-   <elementGuidId>052ee661-252e-494d-8772-28e5d0856f98</elementGuidId>
+   <elementGuidId>e273c797-795b-477f-ba49-f5f7f54c948a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -43,6 +43,13 @@
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>-5</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/div[9]/div[1]/div[@class=&quot;ant-modal-wrap&quot;]/div[@class=&quot;ant-modal&quot;]/div[@class=&quot;ant-modal-content&quot;]/div[@class=&quot;ant-modal-body&quot;]/form[@class=&quot;ant-form ant-form-horizontal&quot;]/div[1]/div[@class=&quot;ant-row&quot;]/div[@class=&quot;ant-col-12&quot;]/span[1]/div[@class=&quot;ant-row ant-form-item ant-form-item-no-colon&quot;]/div[@class=&quot;ant-form-item-control-wrapper&quot;]/div[@class=&quot;ant-form-item-control has-success&quot;]/span[@class=&quot;ant-form-item-children&quot;]/input[@class=&quot;ant-input&quot;]</value>
@@ -52,7 +59,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//input[@value=''])[6]</value>
+      <value>//input[@value='-5']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -73,7 +80,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Submit'])[1]/preceding::input[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[1]/preceding::input[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

@@ -16,113 +16,143 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+int num = GlobalVariable.num
 
-WebUI.navigateToUrl('http://192.168.5.46:9090/sso/sso/login/')
+Random rnd = new Random()
 
-WebUI.maximizeWindow()
+randomNum = rnd.nextInt(10 ** num)
 
-WebUI.setText(findTestObject('Object Repository/Currency Rate/Page_Icon Login/input_WELCOME BACK_username'), 'TOMMIE')
+WebUI.callTestCase(findTestCase('Bank Setup Default link/Bank_Setup_Default'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Currency Rate/Page_Icon Login/input_WELCOME BACK_password'), 'RlZsoEm1HLfPO8dtOqKUMA==')
+WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/a_Currency Rate'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Currency Rate/Page_Icon Login/button_Login'))
+WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/button_Create Currency Rate'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/div_Applications_item__icon'))
+WebUI.setText(findTestObject('Object Repository/Currency Rate/Page_icon-app/input_Rate Code_ant-input'), String.valueOf(
+        randomNum), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/a_Branch_aside__toggler'))
+WebUI.click(findTestObject('Currency Rate Spy/Page_icon-app/div_rate_category'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/span_Bank Setup'))
+WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/li_001 - CURRENCY'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/a_Currency Rate'))
+WebUI.click(findTestObject('Currency Rate Spy/Page_icon-app/button_Add Currency Pair'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/button_Create Currency Rate'))
+WebUI.click(findTestObject('Currency Rate Spy/Page_icon-app/div_from_currency'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Object Repository/Currency Rate/Page_icon-app/input_Rate Code_ant-input'), '015')
+WebUI.click(findTestObject('Currency Rate/Page_icon-app/li_NGN'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Currency Rate Spy/Page_icon-app/div_rate_category'))
+WebUI.click(findTestObject('Currency Rate Spy/Page_icon-app/div_to_currency'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/li_001 - CURRENCY'))
+WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/li_AED'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Currency Rate Spy/Page_icon-app/button_Add Currency Pair'))
+WebUI.setText(findTestObject('Currency Rate Spy/Page_icon-app/input_Unit Rate_ant-input_first'), '5', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Currency Rate Spy/Page_icon-app/div_from_currency'))
+WebUI.setText(findTestObject('Currency Rate Spy/Page_icon-app/input_Treasury Rate_ant-input_first'), '5', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Currency Rate/Page_icon-app/li_NGN'))
+WebUI.setText(findTestObject('Currency Rate Spy/Page_icon-app/input_Positive Tolerance_ant-input_first'), '5', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Currency Rate Spy/Page_icon-app/div_to_currency'))
+WebUI.setText(findTestObject('Currency Rate Spy/Page_icon-app/input_Negative Tolerance_ant-input_first'), '-5', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/li_AED'))
+WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/button_Add'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Currency Rate Spy/Page_icon-app/input_Unit Rate'), '5')
+WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/button_Submit'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Currency Rate Spy/Page_icon-app/input_Treasury Rate'), '5')
+WebUI.verifyTextPresent('Currency rate is Created', false, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Currency Rate Spy/Page_icon-app/input_Positive Tolerance'), '5')
+WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/button_Rate Description_table__btn ant-btn _57890b'), 
+    FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Currency Rate Spy/Page_icon-app/input_Negative Tolerance'), '-5')
+WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/a_ Currency Pair'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/button_Add'))
+WebUI.delay(10, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/button_Submit'))
+WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/button_Add Currency Pair'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/button_Rate Description_table__btn ant-btn _57890b'))
+WebUI.click(findTestObject('Currency Rate Spy/Page_icon-app/div_from_currency_new'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/a_ Currency Pair'))
+WebUI.click(findTestObject('Currency Rate Spy/Page_icon-app/li_AED_new'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(10)
+WebUI.click(findTestObject('Currency Rate Spy/Page_icon-app/div_to_currency_new'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/button_Add Currency Pair'))
+WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/li_EUR'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Currency Rate Spy/Page_icon-app/div_from_currency_new'))
+WebUI.setText(findTestObject('Currency Rate Spy/Page_icon-app/input_Unit Rate_new'), '5', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Currency Rate Spy/Page_icon-app/li_AED_new'))
+WebUI.setText(findTestObject('Currency Rate Spy/Page_icon-app/input_Treasury Rate_new'), '5', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Currency Rate Spy/Page_icon-app/div_to_currency_new'))
+WebUI.setText(findTestObject('Currency Rate Spy/Page_icon-app/input_Positive Tolerance_new'), '5', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/li_EUR'))
+WebUI.setText(findTestObject('Currency Rate Spy/Page_icon-app/input_Negative Tolerance_new'), '-5', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Currency Rate Spy/Page_icon-app/input_Unit Rate_new'), '5')
+WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/button_Submit_1'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Currency Rate Spy/Page_icon-app/input_Treasury Rate_new'), '5')
+WebUI.verifyTextPresent('Currency pair is Created', false, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Currency Rate Spy/Page_icon-app/input_Positive Tolerance_new'), '5')
+not_run: WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/button_Rate Description_table__btn ant-btn _57890b'), 
+    FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Currency Rate Spy/Page_icon-app/input_Negative Tolerance_new'), '-5')
+not_run: WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/a_ View'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/button_Submit_1'))
+WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/button_sentinelStart_ant-modal-close'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/button_Rate Description_table__btn ant-btn _57890b'))
+WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/a_ Edit'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/a_ View'))
+WebUI.setText(findTestObject('Currency Rate Spy/Page_icon-app/input_Unit Rate_edit'), '6', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/button_sentinelStart_ant-modal-close'))
+WebUI.setText(findTestObject('Currency Rate Spy/Page_icon-app/input_Treasury Rate_edit'), '6', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/a_ Edit'))
+WebUI.setText(findTestObject('Currency Rate Spy/Page_icon-app/input_Positive Tolerance_edit'), '6', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Currency Rate Spy/Page_icon-app/input_Unit Rate'), '6')
+WebUI.setText(findTestObject('Currency Rate Spy/Page_icon-app/input_Negative Tolerance_edit'), '-6', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Currency Rate Spy/Page_icon-app/input_Treasury Rate'), '6')
+WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/button_Edit'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Currency Rate Spy/Page_icon-app/input_Positive Tolerance'), '6')
+WebUI.verifyTextPresent('Currency Pair is Updated', false, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Currency Rate Spy/Page_icon-app/input_Negative Tolerance'), '-6')
+WebUI.click(findTestObject('Currency Rate/Page_icon-app/button_sentinelStart_ant-modal-close'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/button_Edit'))
+WebUI.click(findTestObject('Currency Rate Spy/Page_icon-app/a_ Daily Rate List'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/button_Rate Description_table__btn ant-btn _57890b'))
+WebUI.click(findTestObject('Currency Rate Spy/Page_icon-app/button_Add Rate Details'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/a_ Delete'))
+WebUI.setText(findTestObject('Currency Rate Spy/Page_icon-app/input_Unit Rate_ant-input ant-input'), '1', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/button_Yes'))
+WebUI.click(findTestObject('Currency Rate Spy/Page_icon-app/button_Submit_dailyRate'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/div_Delete_ant-drawer-mask'))
+WebUI.verifyTextPresent('Daily Rate is Created', false, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/button_Rate Description_table__btn ant-btn _57890b'))
+WebUI.click(findTestObject('Currency Rate Spy/Page_icon-app/button_Unit Rate_table__dailyRate'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/a_ Delete'))
+WebUI.click(findTestObject('Currency Rate Spy/Page_icon-app/a_Edit_dailyRate'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/button_Yes'))
+WebUI.setText(findTestObject('Currency Rate Spy/Page_icon-app/input_Unit Rate_dailyRate'), '10', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Currency Rate Spy/Page_icon-app/button_Edit_dailyRate'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyTextPresent('Daily Rate is Updated', false, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Currency Rate Spy/Page_icon-app/div_Delete_ant-drawer-mask'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Currency Rate/Page_icon-app/button_sentinelStart_ant-modal-close'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/a_ Delete'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/button_Yes'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyTextPresent(String.valueOf(randomNum) + ' is deleted', false, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Currency Rate Spy/Page_icon-app/div_Delete_ant-drawer-mask'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/button_Rate Description_table__btn ant-btn _57890b'), 
+    FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Currency Rate Spy/Page_icon-app/a_ Delete_'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Object Repository/Currency Rate/Page_icon-app/button_Yes'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyTextPresent(String.valueOf(randomNum) + ' is Deleted', false, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(2, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.closeBrowser(FailureHandling.STOP_ON_FAILURE)
 

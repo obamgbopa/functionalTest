@@ -16,24 +16,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+int num = GlobalVariable.num
 
-WebUI.navigateToUrl('http://192.168.5.46:9090/sso/sso/login/')
+Random rnd = new Random()
 
-WebUI.maximizeWindow()
+randomNum = rnd.nextInt(10 ** num)
 
-WebUI.setText(findTestObject('Object Repository/Business Currency/Page_Icon Login/input_WELCOME BACK_username'), 'TOMMIE')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Business Currency/Page_Icon Login/input_WELCOME BACK_password'), 
-    'RlZsoEm1HLfPO8dtOqKUMA==')
-
-WebUI.click(findTestObject('Object Repository/Business Currency/Page_Icon Login/button_Login'))
-
-WebUI.click(findTestObject('Object Repository/Business Currency/Page_icon-app/div_Applications_item__icon'))
-
-WebUI.click(findTestObject('Object Repository/Business Currency/Page_icon-app/a_Build No_aside__toggler'))
-
-WebUI.click(findTestObject('Object Repository/Business Currency/Page_icon-app/span_Bank Setup'))
+WebUI.callTestCase(findTestCase('Bank Setup Default link/Bank_Setup_Default'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Business Currency/Page_icon-app/a_Business Currency'))
 
@@ -43,7 +32,7 @@ WebUI.click(findTestObject('Object Repository/Business Currency/Page_icon-app/di
 
 WebUI.click(findTestObject('Object Repository/Business Currency/Page_icon-app/li_HNL - HONDURAN LEMPIRA'))
 
-WebUI.setText(findTestObject('Business Currency Spy/Page_icon-app/input_Numeric Code_ant-input(1)'), '666')
+WebUI.setText(findTestObject('Business Currency Spy/Page_icon-app/input_Numeric Code_ant-input(1)'), String.valueOf(randomNum))
 
 WebUI.setText(findTestObject('Business Currency Spy/Page_icon-app/input_Decimal Name_ant-input'), 'HOND')
 
@@ -55,7 +44,8 @@ WebUI.setText(findTestObject('Business Currency Spy/Page_icon-app/input_Leap Yea
 
 WebUI.click(findTestObject('Object Repository/Business Currency/Page_icon-app/button_Add Denomination'))
 
-WebUI.setText(findTestObject('Object Repository/Business Currency/Page_icon-app/input_Numeric Code_ant-input'), '0009')
+WebUI.setText(findTestObject('Object Repository/Business Currency/Page_icon-app/input_Numeric Code_ant-input'), String.valueOf(
+        randomNum))
 
 WebUI.click(findTestObject('Business Currency Spy/Page_icon-app/Page_icon-app/div_category'))
 
@@ -65,7 +55,8 @@ WebUI.click(findTestObject('Business Currency Spy/Page_icon-app/Page_icon-app/di
 
 WebUI.click(findTestObject('Business Currency Spy/Page_icon-app/Page_icon-app/li_NOTE'))
 
-WebUI.setText(findTestObject('Business Currency Spy/Page_icon-app/Page_icon-app/input_Value_ant-input'), '1000')
+WebUI.setText(findTestObject('Business Currency Spy/Page_icon-app/Page_icon-app/input_Value_ant-input'), String.valueOf(
+        randomNum))
 
 WebUI.setText(findTestObject('Business Currency Spy/Page_icon-app/Page_icon-app/input_Description_ant-input'), 'TESTT')
 
@@ -91,27 +82,37 @@ WebUI.setText(findTestObject('Object Repository/Business Currency/Page_icon-app/
 WebUI.setText(findTestObject('Object Repository/Business Currency/Page_icon-app/input_International Check Digit_ant-input a_6566f6'), 
     '77')
 
-WebUI.setText(findTestObject('Business Currency Spy/Page_icon-app/input_Bank identifier (sortcode)_ant-input'), '909')
+WebUI.setText(findTestObject('Business Currency Spy/Page_icon-app/input_Bank identifier (sortcode)_ant-input'), String.valueOf(
+        randomNum))
 
-WebUI.setText(findTestObject('Business Currency Spy/Page_icon-app/input_Branch identifier (sortcode)_ant-input'), '090')
+WebUI.setText(findTestObject('Business Currency Spy/Page_icon-app/input_Branch identifier (sortcode)_ant-input'), String.valueOf(
+        randomNum))
 
 WebUI.click(findTestObject('Business Currency Spy/Page_icon-app/button_A member of SEPA_ant-switch'))
 
 WebUI.click(findTestObject('Object Repository/Business Currency/Page_icon-app/button_Submit'))
 
+WebUI.verifyTextPresent('Business Currency is Created', false)
+
 WebUI.click(findTestObject('Object Repository/Business Currency/Page_icon-app/button_Is BlackListed_ant-switch'))
 
 WebUI.click(findTestObject('Object Repository/Business Currency/Page_icon-app/a_ Edit'))
 
-WebUI.click(findTestObject('Business Currency Spy/Page_icon-app/button_Submit(1)'))
+WebUI.click(findTestObject('Business Currency Spy/Page_icon-app/button_Submit(1)'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Business Currency Spy/Page_icon-app/button_Submit(2)'))
+WebUI.click(findTestObject('Business Currency Spy/Page_icon-app/button_Submit(2)'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyTextPresent('Business Currency is Updated', false)
 
 WebUI.click(findTestObject('Object Repository/Business Currency/Page_icon-app/button_Is BlackListed_ant-switch'))
 
 WebUI.click(findTestObject('Object Repository/Business Currency/Page_icon-app/a_ Delete'))
 
 WebUI.click(findTestObject('Object Repository/Business Currency/Page_icon-app/button_Yes'))
+
+WebUI.verifyTextPresent('HNL is deleted', false)
+
+WebUI.delay(2)
 
 WebUI.closeBrowser()
 

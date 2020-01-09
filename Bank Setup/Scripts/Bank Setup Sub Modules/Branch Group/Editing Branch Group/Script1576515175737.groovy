@@ -67,7 +67,9 @@ WebUI.click(findTestObject('Object Repository/Branch Group/Branch Group Edit/Pag
 
 WebUI.click(findTestObject('Branch Group Edit Spy/Page_icon-app/button_Add Branch_last'))
 
-WebUI.delay(1)
+WebUI.verifyTextPresent('Branch is added', false)
+
+WebUI.delay(2)
 
 WebUI.closeBrowser()
 

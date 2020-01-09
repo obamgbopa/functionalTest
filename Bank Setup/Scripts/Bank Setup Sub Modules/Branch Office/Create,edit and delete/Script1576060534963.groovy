@@ -16,13 +16,20 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+int num = GlobalVariable.num
+
+Random rnd = new Random()
+
+randomNum = rnd.nextInt(10 ** num)
+
 WebUI.callTestCase(findTestCase('Bank Setup Default link/Bank_Setup_Default'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Branch Office/Page_icon-app/a_Branch Office'))
 
 WebUI.click(findTestObject('Object Repository/Branch Office/Page_icon-app/button_Add Branch'))
 
-WebUI.setText(findTestObject('Object Repository/Branch Office/Page_icon-app/input_Code_ant-input'), '666')
+WebUI.setText(findTestObject('Object Repository/Branch Office/Page_icon-app/input_Code_ant-input'), 'BOF' + String.valueOf(
+        randomNum))
 
 WebUI.setText(findTestObject('Branch Office Spy/Page_icon-app/input_Name_ant-input'), 'TOMMIE EXCLUSIVE')
 
@@ -90,6 +97,8 @@ WebUI.setText(findTestObject('Branch Office Spy/Page_icon-app/input_BKE Arrangem
 
 WebUI.click(findTestObject('Object Repository/Branch Office/Page_icon-app/button_Submit'))
 
+WebUI.verifyTextPresent('Bank Branch is Created', false)
+
 WebUI.click(findTestObject('Object Repository/Branch Office/Page_icon-app/button_Cash Transaction allowed_ant-switch'))
 
 WebUI.click(findTestObject('Object Repository/Branch Office/Page_icon-app/a_ Edit'))
@@ -98,13 +107,19 @@ WebUI.click(findTestObject('Branch Office Spy/Page_icon-app/div_city_edit'))
 
 WebUI.click(findTestObject('Branch Office Spy/Page_icon-app/li_APAPA_edit'))
 
-WebUI.click(findTestObject('Object Repository/Branch Office/Page_icon-app/button_Submit'))
+WebUI.click(findTestObject('Branch Office Spy/Page_icon-app/button_Submit_edit'))
+
+WebUI.verifyTextPresent('Bank Branch is Updated', false)
 
 WebUI.click(findTestObject('Object Repository/Branch Office/Page_icon-app/button_Cash Transaction allowed_ant-switch'))
 
-WebUI.click(findTestObject('Object Repository/Branch Office/Page_icon-app/a_ Disable'))
+WebUI.click(findTestObject('Branch Office Spy/Page_icon-app/a_ Delete'))
 
 WebUI.click(findTestObject('Object Repository/Branch Office/Page_icon-app/button_Yes'))
+
+WebUI.verifyTextPresent(('BOF' + String.valueOf(randomNum)) + ' is deleted', false)
+
+WebUI.delay(2)
 
 WebUI.closeBrowser()
 

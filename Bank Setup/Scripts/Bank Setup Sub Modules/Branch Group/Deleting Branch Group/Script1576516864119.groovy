@@ -48,7 +48,9 @@ WebUI.click(findTestObject('Branch Group Edit Spy/Page_icon-app/a_ Delete'))
 
 WebUI.click(findTestObject('Branch Group Edit Spy/Page_icon-app/button_Yes'))
 
-WebUI.delay(1)
+WebUI.verifyTextPresent('Branch Code is Deleted', false)
+
+WebUI.delay(2)
 
 WebUI.closeBrowser()
 
