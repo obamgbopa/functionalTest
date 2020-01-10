@@ -36,8 +36,6 @@ WebUI.setText(findTestObject('Object Repository/Manage GL/Page_icon-app/input_De
 
 WebUI.click(findTestObject('Object Repository/Manage GL/Page_icon-app/button_Update'))
 
-WebUI.delay(60)
-
 WebUI.verifyTextPresent('GL update was successful', false)
 
 WebUI.delay(2)

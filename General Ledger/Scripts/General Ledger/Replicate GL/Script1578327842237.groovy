@@ -32,7 +32,9 @@ WebUI.click(findTestObject('Object Repository/Replicate GL/Page_icon-app/span_Ty
 
 WebUI.click(findTestObject('Object Repository/Replicate GL/Page_icon-app/button_Add General Ledger_ant-btn ant-btn-primary'))
 
-WebUI.click(findTestObject('Object Repository/Replicate GL/Page_icon-app/div_Multiple Select'))
+WebUI.click(findTestObject('Replicate GL spy/Page_icon-app/button_LEAF_table__btn ant-btn ant-btn-primary'))
+
+WebUI.click(findTestObject('Replicate GL spy/Page_icon-app/div_Multiple Select'))
 
 WebUI.click(findTestObject('Replicate GL spy/Page_icon-app/button_Search'))
 
