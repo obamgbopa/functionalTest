@@ -32,23 +32,25 @@ not_run: WebUI.click(findTestObject('Object Repository/Edit Till/Page_icon-app/s
 
 not_run: WebUI.click(findTestObject('Object Repository/Edit Till/Page_icon-app/button_Yes'))
 
-WebUI.click(findTestObject('Object Repository/Edit Till/Page_icon-app/div_'))
+not_run: WebUI.click(findTestObject('Object Repository/Edit Till/Page_icon-app/div_'))
 
-WebUI.click(findTestObject('Edit Till spy/Page_icon-app/li_EUR - EURO'))
+not_run: WebUI.click(findTestObject('Edit Till spy/Page_icon-app/li_EUR - EURO'))
 
-WebUI.click(findTestObject('Object Repository/Edit Till/Page_icon-app/svg_1'))
+not_run: WebUI.click(findTestObject('Object Repository/Edit Till/Page_icon-app/svg_1'))
 
-WebUI.click(findTestObject('Object Repository/Edit Till/Page_icon-app/button_Search'))
+not_run: WebUI.click(findTestObject('Object Repository/Edit Till/Page_icon-app/button_Search'))
 
-WebUI.click(findTestObject('Object Repository/Edit Till/Page_icon-app/button_Select'))
+not_run: WebUI.click(findTestObject('Object Repository/Edit Till/Page_icon-app/button_Select'))
 
-WebUI.click(findTestObject('Object Repository/Edit Till/Page_icon-app/button_Add Currency'))
+not_run: WebUI.click(findTestObject('Object Repository/Edit Till/Page_icon-app/button_Add Currency'))
 
 WebUI.click(findTestObject('Edit Till spy/Page_icon-app/button_UPDATE TILL'))
 
 WebUI.click(findTestObject('Edit Till/Page_icon-app/button_Yes'))
 
-WebUI.delay(2)
+WebUI.verifyTextPresent('Till Updated Successfully', false)
+
+WebUI.delay(1)
 
 WebUI.closeBrowser()
 

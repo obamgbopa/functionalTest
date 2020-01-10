@@ -30,7 +30,8 @@ WebUI.delay(5)
 
 WebUI.click(findTestObject('Object Repository/Add Till/Page_icon-app/button_ADD TILL'))
 
-WebUI.setText(findTestObject('Object Repository/Add Till/Page_icon-app/input_Till ID_ant-input'), 'LBT' + String.valueOf(randomNum))
+WebUI.setText(findTestObject('Object Repository/Add Till/Page_icon-app/input_Till ID_ant-input'), 'LBT' + String.valueOf(
+        randomNum))
 
 //GlobalVariable.tillExist = WebUI.getText(findTestObject('Object Repository/Add Till/Page_icon-app/input_Till ID_ant-input'))
 WebUI.click(findTestObject('Object Repository/Add Till/Page_icon-app/svg'))
@@ -65,13 +66,9 @@ WebUI.click(findTestObject('Add Till Spy/Page_icon-app/button_ADD TILL_2'))
 
 WebUI.click(findTestObject('Object Repository/Add Till/Page_icon-app/button_Yes'))
 
-WebUI.verifyTextPresent('', false)
+WebUI.verifyTextPresent('Till Allocated Successfully', false)
 
-WebUI.setText(findTestObject('View Till/Page_icon-app/input_ADD TILL_ant-input'), 'LBT' + String.valueOf(randomNum))
-
-WebUI.verifyTextPresent('LBT' + String.valueOf(randomNum), false)
-
-WebUI.delay(2)
+WebUI.delay(1)
 
 //println(GlobalVariable.tillExist)
 WebUI.closeBrowser()

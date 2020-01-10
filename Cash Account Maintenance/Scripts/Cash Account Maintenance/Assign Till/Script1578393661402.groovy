@@ -32,25 +32,27 @@ WebUI.click(findTestObject('Object Repository/Assign Till/Page_icon-app/div_'))
 
 WebUI.click(findTestObject('Object Repository/Assign Till/Page_icon-app/li_PET003'))
 
-WebUI.click(findTestObject('Object Repository/Assign Till/Page_icon-app/button_ADD TILL_ant-btn ant-btn-primary ant_d6deb7'))
+not_run: WebUI.click(findTestObject('Object Repository/Assign Till/Page_icon-app/button_ADD TILL_ant-btn ant-btn-primary ant_d6deb7'))
 
-WebUI.click(findTestObject('Assign Till spy/Page_icon-app/div_currency'))
+not_run: WebUI.click(findTestObject('Assign Till spy/Page_icon-app/div_currency'))
 
-WebUI.click(findTestObject('Object Repository/Assign Till/Page_icon-app/li_AED - UNITED ARAB EMIRATE DINAAR'))
+not_run: WebUI.click(findTestObject('Object Repository/Assign Till/Page_icon-app/li_AED - UNITED ARAB EMIRATE DINAAR'))
 
-WebUI.click(findTestObject('Object Repository/Assign Till/Page_icon-app/svg_1'))
+not_run: WebUI.click(findTestObject('Object Repository/Assign Till/Page_icon-app/svg_1'))
 
-WebUI.click(findTestObject('Object Repository/Assign Till/Page_icon-app/button_Search'))
+not_run: WebUI.click(findTestObject('Object Repository/Assign Till/Page_icon-app/button_Search'))
 
-WebUI.click(findTestObject('Object Repository/Assign Till/Page_icon-app/button_Select'))
+not_run: WebUI.click(findTestObject('Object Repository/Assign Till/Page_icon-app/button_Select'))
 
-WebUI.click(findTestObject('Object Repository/Assign Till/Page_icon-app/button_Add Currency'))
+not_run: WebUI.click(findTestObject('Object Repository/Assign Till/Page_icon-app/button_Add Currency'))
 
 WebUI.click(findTestObject('Object Repository/Assign Till/Page_icon-app/button_ASSIGN TILL'))
 
 WebUI.click(findTestObject('Object Repository/Assign Till/Page_icon-app/button_Yes'))
 
-WebUI.delay(2)
+WebUI.verifyTextPresent('Till Assigned Successfully', false)
+
+WebUI.delay(1)
 
 WebUI.closeBrowser()
 
