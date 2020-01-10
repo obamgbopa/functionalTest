@@ -11,6 +11,18 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <testSuiteGuid>263f3739-b74e-4ab6-bba0-f64736ea564b</testSuiteGuid>
    <testCaseLink>
+      <guid>6c2fa573-c32c-4bca-b78d-dd9d5b10cf75</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Cash Account Maintenance/Assign Till</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>838e0ebc-643b-423b-b8d8-864b3149d3d6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Cash Account Maintenance/Deassign Till</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
       <guid>ed579d9a-a438-40e3-b4a6-c564e48c0f2b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -27,17 +39,5 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Cash Account Maintenance/Edit Till</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>6c2fa573-c32c-4bca-b78d-dd9d5b10cf75</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Cash Account Maintenance/Assign Till</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>838e0ebc-643b-423b-b8d8-864b3149d3d6</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Cash Account Maintenance/Deassign Till</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

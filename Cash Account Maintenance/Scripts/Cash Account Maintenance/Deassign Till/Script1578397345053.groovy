@@ -29,7 +29,9 @@ WebUI.click(findTestObject('Deassign Till/Page_icon-app/a_Deassign'))
 
 WebUI.click(findTestObject('Deassign Till/Page_icon-app/button_Yes'))
 
-WebUI.delay(2)
+WebUI.verifyTextPresent('Till DE-ASSIGNED Successfully', false)
+
+WebUI.delay(1)
 
 WebUI.closeBrowser()
 

@@ -30,11 +30,13 @@ WebUI.click(findTestObject('View Till spy/Page_icon-app/button_AVAILABLE_table__
 
 WebUI.click(findTestObject('Object Repository/View Till/Page_icon-app/a_View'))
 
-WebUI.delay(10)
+WebUI.verifyTextPresent('CAM009', false)
 
-WebUI.click(findTestObject('Object Repository/View Till/Page_icon-app/span_Deassign_ant-drawer-close-x'))
+not_run: WebUI.delay(10)
 
-WebUI.delay(2)
+not_run: WebUI.click(findTestObject('Object Repository/View Till/Page_icon-app/span_Deassign_ant-drawer-close-x'))
+
+WebUI.delay(1)
 
 WebUI.closeBrowser()
 
