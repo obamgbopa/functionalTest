@@ -1,28 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>li_BOTH</name>
+   <name>li_QA004 - FIYIN TITUS</name>
    <tag></tag>
-   <elementGuidId>9974a613-f21d-45ae-934e-ce7cd912d937</elementGuidId>
+   <elementGuidId>ce53726d-d715-433d-9187-4ba5777153c9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='INVENTORY'])[3]/following::li[1]</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='BRAN11 - BRANCHTEST'])[1]/following::li[2]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>id(&quot;b090449e-8a88-4ddb-dc5a-c1084657a834&quot;)/ul[@class=&quot;ant-select-dropdown-menu ant-select-dropdown-menu-vertical ant-select-dropdown-menu-root&quot;]/li[@class=&quot;ant-select-dropdown-menu-item ant-select-dropdown-menu-item-active&quot;][count(. | //*[(text() = '
-            BOTH
-          ' or . = '
-            BOTH
-          ')]) = count(//*[(text() = '
-            BOTH
-          ' or . = '
-            BOTH
+         <value>id(&quot;bb59c7bf-666e-4c23-fba0-1afd01b037d5&quot;)/ul[@class=&quot;ant-select-dropdown-menu ant-select-dropdown-menu-vertical ant-select-dropdown-menu-root&quot;]/li[@class=&quot;ant-select-dropdown-menu-item ant-select-dropdown-menu-item-active&quot;][count(. | //*[(text() = 'QA004 - FIYIN TITUS
+          ' or . = 'QA004 - FIYIN TITUS
+          ')]) = count(//*[(text() = 'QA004 - FIYIN TITUS
+          ' or . = 'QA004 - FIYIN TITUS
           ')])]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -57,8 +53,7 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>
-            BOTH
+      <value>QA004 - FIYIN TITUS
           </value>
    </webElementProperties>
    <webElementProperties>
@@ -66,34 +61,48 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;b090449e-8a88-4ddb-dc5a-c1084657a834&quot;)/ul[@class=&quot;ant-select-dropdown-menu ant-select-dropdown-menu-vertical ant-select-dropdown-menu-root&quot;]/li[@class=&quot;ant-select-dropdown-menu-item ant-select-dropdown-menu-item-active&quot;]</value>
+      <value>id(&quot;bb59c7bf-666e-4c23-fba0-1afd01b037d5&quot;)/ul[@class=&quot;ant-select-dropdown-menu ant-select-dropdown-menu-vertical ant-select-dropdown-menu-root&quot;]/li[@class=&quot;ant-select-dropdown-menu-item ant-select-dropdown-menu-item-active&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='b090449e-8a88-4ddb-dc5a-c1084657a834']/ul/li[3]</value>
+      <value>//div[@id='bb59c7bf-666e-4c23-fba0-1afd01b037d5']/ul/li</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='INVENTORY'])[3]/following::li[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='BRAN11 - BRANCHTEST'])[1]/following::li[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='CASH'])[4]/following::li[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='BRANCH22 - VI BRANCH'])[1]/following::li[5]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='QC100 - ARAKUNRIN AKEREDOLU'])[1]/preceding::li[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::li[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[10]/div/div/div/ul/li[3]</value>
+      <value>//div[8]/div/div/div/ul/li</value>
    </webElementXpaths>
 </WebElementEntity>

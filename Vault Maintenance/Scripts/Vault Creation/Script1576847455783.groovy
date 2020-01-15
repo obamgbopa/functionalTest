@@ -13,52 +13,64 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://192.168.5.46:9090/sso/sso/login/')
+WebUI.navigateToUrl('http://192.168.5.46:9090/sso')
 
-WebUI.setText(findTestObject('Object Repository/Page_Icon Login/input_WELCOME BACK_username'), 'josh')
+WebUI.maximizeWindow()
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Icon Login/input_WELCOME BACK_password'), '3iF79iufxPg=')
+WebUI.setText(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_sso/input_WELCOME BACK_ant-input ant-input-lg'), 
+    'josh')
 
-WebUI.click(findTestObject('Object Repository/Page_Icon Login/button_Login'))
+WebUI.setEncryptedText(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_sso/Page_sso/input_WELCOME BACK_ant-input ant-input-lg'), 
+    '3iF79iufxPg=')
 
-WebUI.click(findTestObject('Object Repository/Page_icon-app/div_Applications_item__icon'))
+WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_sso/Page_sso/Page_sso/button_Login'))
 
-WebUI.click(findTestObject('Object Repository/Page_icon-app/a_Build No_aside__toggler'))
+WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_sso/Page_sso/Page_sso/Page_sso/a_CORE'))
 
-WebUI.click(findTestObject('Object Repository/Page_icon-app/span_Vault Maintenance'))
+WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_sso/Page_sso/Page_sso/Page_icon-app/a_Build No_aside__toggler'))
 
-WebUI.click(findTestObject('Object Repository/Page_icon-app/button_Define Vault'))
+WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_sso/Page_sso/Page_sso/Page_icon-app/span_Vault Maintenance'))
+
+WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_sso/Page_sso/Page_sso/Page_icon-app/button_Define Vault'))
 
 WebUI.setText(findTestObject('Object Repository/Page_icon-app/input_Vault Id_ant-input'), 'VAULT1212')
 
 WebUI.click(findTestObject('Object Repository/Page_icon-app/div_Select'))
 
-WebUI.setText(findTestObject('Object Repository/Page_icon-app/input_Vault Id_ant-input'), 'VAULT1212')
+WebUI.delay(1)
 
-WebUI.click(findTestObject('Object Repository/Page_icon-app/li_BOTH'))
+WebUI.click(findTestObject('Page_icon-app/Page_icon-app/li_BOTH'))
 
 WebUI.click(findTestObject('Object Repository/Page_icon-app/div_Select branch code'))
 
-WebUI.click(findTestObject('Object Repository/Page_icon-app/li_094 - NAVY TOWNMAMMY MKT'))
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_icon-app/Page_icon-app/li_094 - NAVY TOWNMAMMY MKT'))
 
 WebUI.click(findTestObject('Object Repository/Page_icon-app/div_Select_1'))
 
-WebUI.click(findTestObject('Object Repository/Page_icon-app/li_QC100 - ARAKUNRIN AKEREDOLU'))
+WebUI.delay(1)
 
-WebUI.click(findTestObject('Object Repository/Page_icon-app/li_QA004 - FIYIN TITUS'))
+WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_sso/Page_sso/Page_sso/Page_sso/Page_icon-app/li_QC100 - ARAKUNRIN AKEREDOLU'))
 
 WebUI.click(findTestObject('Object Repository/Page_icon-app/div_'))
 
-WebUI.click(findTestObject('Object Repository/Page_icon-app/li_QA004 - FIYIN TITUS'))
+WebUI.delay(2.2)
 
-WebUI.click(findTestObject('Object Repository/Page_icon-app/a_Today'))
+WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_sso/Page_sso/Page_sso/Page_sso/Page_icon-app/li_QC100 - ARAKUNRIN AKEREDOLU'))
 
-WebUI.click(findTestObject('Object Repository/Page_icon-app/div_Select'))
+WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_icon-app/input_Definition Date_ant-calendar-picker-input ant-input'))
 
-WebUI.click(findTestObject('Object Repository/Page_icon-app/li_BOTH'))
+WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_icon-app/a_Today'))
+
+WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_icon-app/div_Select'))
+
+WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_icon-app/li_BOTH'))
 
 WebUI.click(findTestObject('Object Repository/Page_icon-app/div_Select'))
 

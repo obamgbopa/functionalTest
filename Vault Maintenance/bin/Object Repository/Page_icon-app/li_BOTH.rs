@@ -7,22 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='INVENTORY'])[3]/following::li[1]</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>id(&quot;b090449e-8a88-4ddb-dc5a-c1084657a834&quot;)/ul[@class=&quot;ant-select-dropdown-menu ant-select-dropdown-menu-vertical ant-select-dropdown-menu-root&quot;]/li[@class=&quot;ant-select-dropdown-menu-item ant-select-dropdown-menu-item-active&quot;][count(. | //*[(text() = '
-            BOTH
-          ' or . = '
-            BOTH
-          ')]) = count(//*[(text() = '
-            BOTH
-          ' or . = '
-            BOTH
-          ')])]</value>
+         <value>//div[@id='b090449e-8a88-4ddb-dc5a-c1084657a834']/ul/li[3]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +50,7 @@
           </value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>

@@ -7,10 +7,18 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='b0a65bca-f788-4fc2-cdc2-3ea93dc81276']/ul/li[2]</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='BRAN11 - BRANCHTEST'])[1]/following::li[3]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;b0a65bca-f788-4fc2-cdc2-3ea93dc81276&quot;)/ul[@class=&quot;ant-select-dropdown-menu ant-select-dropdown-menu-vertical ant-select-dropdown-menu-root&quot;]/li[@class=&quot;ant-select-dropdown-menu-item ant-select-dropdown-menu-item-active&quot;][count(. | //*[(text() = 'QC100 - ARAKUNRIN AKEREDOLU
+          ' or . = 'QC100 - ARAKUNRIN AKEREDOLU
+          ')]) = count(//*[(text() = 'QC100 - ARAKUNRIN AKEREDOLU
+          ' or . = 'QC100 - ARAKUNRIN AKEREDOLU
+          ')])]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -49,7 +57,7 @@
           </value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>

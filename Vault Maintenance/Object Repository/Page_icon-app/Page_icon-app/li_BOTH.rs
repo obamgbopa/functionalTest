@@ -3,7 +3,7 @@
    <description></description>
    <name>li_BOTH</name>
    <tag></tag>
-   <elementGuidId>9974a613-f21d-45ae-934e-ce7cd912d937</elementGuidId>
+   <elementGuidId>36082f06-cc89-4aeb-a172-b97d8799abec</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -11,18 +11,18 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>id(&quot;b090449e-8a88-4ddb-dc5a-c1084657a834&quot;)/ul[@class=&quot;ant-select-dropdown-menu ant-select-dropdown-menu-vertical ant-select-dropdown-menu-root&quot;]/li[@class=&quot;ant-select-dropdown-menu-item ant-select-dropdown-menu-item-active&quot;][count(. | //*[(text() = '
+         <value>id(&quot;24e87047-66af-431e-d970-36a5eeed1124&quot;)/ul[@class=&quot;ant-select-dropdown-menu ant-select-dropdown-menu-vertical ant-select-dropdown-menu-root&quot;]/li[@class=&quot;ant-select-dropdown-menu-item ant-select-dropdown-menu-item-active&quot;][count(. | //*[@class = 'ant-select-dropdown-menu-item ant-select-dropdown-menu-item-active' and (text() = '
             BOTH
           ' or . = '
             BOTH
-          ')]) = count(//*[(text() = '
+          ')]) = count(//*[@class = 'ant-select-dropdown-menu-item ant-select-dropdown-menu-item-active' and (text() = '
             BOTH
           ' or . = '
             BOTH
           ')])]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,7 +39,7 @@
       <value>option</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
@@ -66,14 +66,14 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;b090449e-8a88-4ddb-dc5a-c1084657a834&quot;)/ul[@class=&quot;ant-select-dropdown-menu ant-select-dropdown-menu-vertical ant-select-dropdown-menu-root&quot;]/li[@class=&quot;ant-select-dropdown-menu-item ant-select-dropdown-menu-item-active&quot;]</value>
+      <value>id(&quot;24e87047-66af-431e-d970-36a5eeed1124&quot;)/ul[@class=&quot;ant-select-dropdown-menu ant-select-dropdown-menu-vertical ant-select-dropdown-menu-root&quot;]/li[@class=&quot;ant-select-dropdown-menu-item ant-select-dropdown-menu-item-active&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='b090449e-8a88-4ddb-dc5a-c1084657a834']/ul/li[3]</value>
+      <value>//div[@id='24e87047-66af-431e-d970-36a5eeed1124']/ul/li[3]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,6 +94,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[10]/div/div/div/ul/li[3]</value>
+      <value>//div[9]/div/div/div/ul/li[3]</value>
    </webElementXpaths>
 </WebElementEntity>
