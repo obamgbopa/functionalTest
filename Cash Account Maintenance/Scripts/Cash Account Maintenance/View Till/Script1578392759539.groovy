@@ -18,27 +18,25 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Login/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Manage GL/Page_icon-app/span_General Ledger'))
+WebUI.click(findTestObject('Object Repository/View Till/Page_icon-app/span_Cash Account Maintenance'))
 
-WebUI.click(findTestObject('Object Repository/Manage GL/Page_icon-app/button_Add General Ledger_ant-btn ant-btn-primary'))
+WebUI.delay(5)
 
-WebUI.setText(findTestObject('Object Repository/Manage GL/Page_icon-app/input_Add General Ledger_ant-input'), 'GLTEST2000')
+WebUI.setText(findTestObject('Object Repository/View Till/Page_icon-app/input_ADD TILL_ant-input'), 'cam009')
 
-WebUI.click(findTestObject('Object Repository/Manage GL/Page_icon-app/button_Search Headers'))
+WebUI.click(findTestObject('View Till spy/Page_icon-app/button_search'))
 
-WebUI.click(findTestObject('Manage GL spy/Page_icon-app/button_HEADER_table__btn ant-btn ant-btn-primary ant-dropdown-trigger'))
+WebUI.click(findTestObject('View Till spy/Page_icon-app/button_AVAILABLE_table__btn ant-btn ant-btn-primary ant-dropdown-trigger'))
 
-WebUI.click(findTestObject('Manage GL spy/Page_icon-app/a_Manage AUTOMATED TESTING ON GL EDITED'))
+WebUI.click(findTestObject('Object Repository/View Till/Page_icon-app/a_View'))
 
-WebUI.click(findTestObject('Manage GL spy/Page_icon-app/button_AUTOMATED TESTING ON GL EDITED_ant-btn ant-btn-primary ant-btn-circle'))
+WebUI.verifyTextPresent('CAM009', false)
 
-WebUI.setText(findTestObject('Object Repository/Manage GL/Page_icon-app/input_Decription_ant-input ant-input-lg'), ' EDITED')
+not_run: WebUI.delay(10)
 
-WebUI.click(findTestObject('Object Repository/Manage GL/Page_icon-app/button_Update'))
+not_run: WebUI.click(findTestObject('Object Repository/View Till/Page_icon-app/span_Deassign_ant-drawer-close-x'))
 
-WebUI.verifyTextPresent('GL update was successful', false)
-
-WebUI.delay(2)
+WebUI.delay(1)
 
 WebUI.closeBrowser()
 

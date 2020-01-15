@@ -14,31 +14,24 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Login/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Manage GL/Page_icon-app/span_General Ledger'))
+WebUI.click(findTestObject('Object Repository/Edit Till/Page_icon-app/span_Cash Account Maintenance'))
 
-WebUI.click(findTestObject('Object Repository/Manage GL/Page_icon-app/button_Add General Ledger_ant-btn ant-btn-primary'))
+WebUI.setText(findTestObject('Object Repository/Edit Till/Page_icon-app/input_ADD TILL_ant-input'), 'cam009')
 
-WebUI.setText(findTestObject('Object Repository/Manage GL/Page_icon-app/input_Add General Ledger_ant-input'), 'GLTEST2000')
+WebUI.click(findTestObject('View Till spy/Page_icon-app/button_search'))
 
-WebUI.click(findTestObject('Object Repository/Manage GL/Page_icon-app/button_Search Headers'))
+WebUI.click(findTestObject('View Till spy/Page_icon-app/button_AVAILABLE_table__btn ant-btn ant-btn-primary ant-dropdown-trigger'))
 
-WebUI.click(findTestObject('Manage GL spy/Page_icon-app/button_HEADER_table__btn ant-btn ant-btn-primary ant-dropdown-trigger'))
+WebUI.click(findTestObject('Deassign Till/Page_icon-app/a_Deassign'))
 
-WebUI.click(findTestObject('Manage GL spy/Page_icon-app/a_Manage AUTOMATED TESTING ON GL EDITED'))
+WebUI.click(findTestObject('Deassign Till/Page_icon-app/button_Yes'))
 
-WebUI.click(findTestObject('Manage GL spy/Page_icon-app/button_AUTOMATED TESTING ON GL EDITED_ant-btn ant-btn-primary ant-btn-circle'))
+WebUI.verifyTextPresent('Till DE-ASSIGNED Successfully', false)
 
-WebUI.setText(findTestObject('Object Repository/Manage GL/Page_icon-app/input_Decription_ant-input ant-input-lg'), ' EDITED')
-
-WebUI.click(findTestObject('Object Repository/Manage GL/Page_icon-app/button_Update'))
-
-WebUI.verifyTextPresent('GL update was successful', false)
-
-WebUI.delay(2)
+WebUI.delay(1)
 
 WebUI.closeBrowser()
 
