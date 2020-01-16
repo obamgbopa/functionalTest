@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>li_098 - VISLAND SAKA TINUBU</name>
+   <name>a_CORE</name>
    <tag></tag>
-   <elementGuidId>32758f6b-7338-4b18-afb9-b1adc0ccbe38</elementGuidId>
+   <elementGuidId>d7969ba4-8cdc-4c72-9140-3e283b125c6f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='CODE2873'])[1]/following::li[6]</value>
+         <value>//div[@id='__layout']/div/section/div/ul/li/div/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -17,77 +17,76 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>li</value>
+      <value>a</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>role</name>
+      <name>href</name>
       <type>Main</type>
-      <value>option</value>
+      <value>http://192.168.5.46:8081/core</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>ant-select-dropdown-menu-item ant-select-dropdown-menu-item-active</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>unselectable</name>
-      <type>Main</type>
-      <value>on</value>
+      <value>app__link</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>098 - V/ISLAND SAKA TINUBU
-          </value>
+      <value> CORE</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;7c86c67f-9fb6-447d-e72a-619ee4963b95&quot;)/ul[@class=&quot;ant-select-dropdown-menu ant-select-dropdown-menu-vertical ant-select-dropdown-menu-root&quot;]/li[@class=&quot;ant-select-dropdown-menu-item ant-select-dropdown-menu-item-active&quot;]</value>
+      <value>id(&quot;__layout&quot;)/div[@class=&quot;container&quot;]/section[@class=&quot;page__sso&quot;]/div[@class=&quot;main&quot;]/ul[@class=&quot;app&quot;]/li[@class=&quot;app__item&quot;]/div[@class=&quot;app__resource&quot;]/a[@class=&quot;app__link&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='7c86c67f-9fb6-447d-e72a-619ee4963b95']/ul/li[6]</value>
+      <value>//div[@id='__layout']/div/section/div/ul/li/div/a</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='CODE2873'])[1]/following::li[6]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Applications'])[1]/following::a[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='RATE22'])[1]/following::li[8]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='TOMMIE'])[1]/following::a[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='BRAN11 - BT'])[1]/preceding::li[190]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='TRADE'])[1]/preceding::a[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[@href='http://192.168.5.46:8081/core']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[11]/div/div/div/ul/li[6]</value>
+      <value>//div/a</value>
    </webElementXpaths>
 </WebElementEntity>

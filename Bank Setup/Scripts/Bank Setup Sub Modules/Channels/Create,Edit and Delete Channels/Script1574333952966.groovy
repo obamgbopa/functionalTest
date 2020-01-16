@@ -46,9 +46,13 @@ WebUI.click(findTestObject('Channels Spy/Page_icon-app/div_default_rate_code'))
 
 WebUI.click(findTestObject('Channels Spy/Page_icon-app/li_AUB'))
 
-WebUI.click(findTestObject('Channels Spy/Page_icon-app/div_branch'))
+WebUI.click(findTestObject('Channels Spy/channel changes 2/Page_icon-app/input_Branch_ant-input'))
 
-WebUI.click(findTestObject('Channels Spy/Page_icon-app/li_098 - VISLAND SAKA TINUBU'))
+WebUI.sendKeys(findTestObject('Channels Spy/channel changes 2/Page_icon-app/input_Branch_ant-input'), Keys.chord(Keys.ENTER))
+
+WebUI.click(findTestObject('Channels Spy/channel changes 2/Page_icon-app/button_Search'))
+
+WebUI.click(findTestObject('Channels Spy/channel changes 2/Page_icon-app/button_Select'))
 
 WebUI.click(findTestObject('Object Repository/Channels/Page_icon-app/input_Status_radioGroup'))
 

@@ -16,25 +16,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('http://192.168.5.46:9090/sso/sso/login/')
-
-WebUI.maximizeWindow()
-
-WebUI.setText(findTestObject('Object Repository/Branch Group/Branch Group Edit/Page_Icon Login/input_WELCOME BACK_username'), 
-    'TOMMIE')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Branch Group/Branch Group Edit/Page_Icon Login/input_WELCOME BACK_password'), 
-    'RlZsoEm1HLfPO8dtOqKUMA==')
-
-WebUI.click(findTestObject('Object Repository/Branch Group/Branch Group Edit/Page_Icon Login/button_Login'))
-
-WebUI.click(findTestObject('Object Repository/Branch Group/Branch Group Edit/Page_icon-app/div_Applications_item__icon'))
-
-WebUI.click(findTestObject('Object Repository/Branch Group/Branch Group Edit/Page_icon-app/a_Build No_aside__toggler'))
-
-WebUI.click(findTestObject('Object Repository/Branch Group/Branch Group Edit/Page_icon-app/span_Bank Setup'))
+WebUI.callTestCase(findTestCase('Bank Setup Default link/Bank_Setup_Default'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Branch Group/Branch Group Edit/Page_icon-app/a_Branch Group'))
 
