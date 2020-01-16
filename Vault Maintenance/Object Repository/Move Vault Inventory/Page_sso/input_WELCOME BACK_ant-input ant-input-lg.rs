@@ -1,108 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>li_QC100 - ARAKUNRIN AKEREDOLU</name>
+   <name>input_WELCOME BACK_ant-input ant-input-lg</name>
    <tag></tag>
-   <elementGuidId>dba8d08f-cc23-43a8-b7bf-05f8310347a1</elementGuidId>
+   <elementGuidId>75239558-442f-4f63-b9ea-7bd8959c6780</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='QA004 - FIYIN TITUS'])[1]/following::li[1]</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>id(&quot;bb59c7bf-666e-4c23-fba0-1afd01b037d5&quot;)/ul[@class=&quot;ant-select-dropdown-menu ant-select-dropdown-menu-vertical ant-select-dropdown-menu-root&quot;]/li[@class=&quot;ant-select-dropdown-menu-item ant-select-dropdown-menu-item-active&quot;][count(. | //*[(text() = 'QC100 - ARAKUNRIN AKEREDOLU
-          ' or . = 'QC100 - ARAKUNRIN AKEREDOLU
-          ')]) = count(//*[(text() = 'QC100 - ARAKUNRIN AKEREDOLU
-          ' or . = 'QC100 - ARAKUNRIN AKEREDOLU
-          ')])]</value>
+         <value>//input[@type='text']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>li</value>
+      <value>input</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Username</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>role</name>
+      <name>size</name>
       <type>Main</type>
-      <value>option</value>
+      <value>large</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>autocomplete</name>
+      <type>Main</type>
+      <value>new-password</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>ant-select-dropdown-menu-item ant-select-dropdown-menu-item-active</value>
+      <value>ant-input ant-input-lg</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>unselectable</name>
-      <type>Main</type>
-      <value>on</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>text</name>
-      <type>Main</type>
-      <value>QC100 - ARAKUNRIN AKEREDOLU
-          </value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;bb59c7bf-666e-4c23-fba0-1afd01b037d5&quot;)/ul[@class=&quot;ant-select-dropdown-menu ant-select-dropdown-menu-vertical ant-select-dropdown-menu-root&quot;]/li[@class=&quot;ant-select-dropdown-menu-item ant-select-dropdown-menu-item-active&quot;]</value>
+      <value>id(&quot;__layout&quot;)/div[1]/section[@class=&quot;page__login&quot;]/div[@class=&quot;login&quot;]/div[2]/form[@class=&quot;login__form&quot;]/div[@class=&quot;login__input&quot;]/div[@class=&quot;ant-row ant-form-item ant-form-item-no-colon&quot;]/div[@class=&quot;ant-form-item-control-wrapper&quot;]/div[@class=&quot;ant-form-item-control&quot;]/span[@class=&quot;ant-form-item-children&quot;]/span[@class=&quot;ant-input-affix-wrapper ant-input-affix-wrapper-lg&quot;]/input[@class=&quot;ant-input ant-input-lg&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//input[@type='text']</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='bb59c7bf-666e-4c23-fba0-1afd01b037d5']/ul/li[2]</value>
+      <value>//div[@id='__layout']/div/section/div/div[2]/form/div/div/div/div/span/span/input</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='QA004 - FIYIN TITUS'])[1]/following::li[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='WELCOME BACK'])[1]/following::input[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='BRAN11 - BRANCHTEST'])[1]/following::li[3]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Login'])[1]/preceding::input[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::li[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alt'])[1]/preceding::li[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Notice'])[1]/preceding::input[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[8]/div/div/div/ul/li[2]</value>
+      <value>//input</value>
    </webElementXpaths>
 </WebElementEntity>

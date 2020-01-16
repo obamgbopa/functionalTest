@@ -56,13 +56,13 @@ WebUI.click(findTestObject('Object Repository/Page_icon-app/div_Select_1'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_sso/Page_sso/Page_sso/Page_sso/Page_icon-app/li_QC100 - ARAKUNRIN AKEREDOLU'))
+WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_sso/Page_sso/Page_sso/Page_sso/Page_icon-app/Page_icon-app/Page_icon-app/li_QC100 - ARAKUNRIN AKEREDOLU'))
 
 WebUI.click(findTestObject('Object Repository/Page_icon-app/div_'))
 
 WebUI.delay(2.2)
 
-WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_sso/Page_sso/Page_sso/Page_sso/Page_icon-app/li_QC100 - ARAKUNRIN AKEREDOLU'))
+WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_sso/Page_sso/Page_sso/Page_sso/Page_icon-app/Page_icon-app/li_QA004 - FIYIN TITUS'))
 
 WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_icon-app/input_Definition Date_ant-calendar-picker-input ant-input'))
 
@@ -72,9 +72,11 @@ WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_icon-
 
 WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_icon-app/li_BOTH'))
 
-WebUI.click(findTestObject('Object Repository/Page_icon-app/div_Select'))
+WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_sso/Page_sso/Page_sso/Page_sso/Page_icon-app/Page_icon-app/Page_icon-app/Page_icon-app/div_Select'))
 
-WebUI.click(findTestObject('Object Repository/Page_icon-app/li_OPENED'))
+WebUI.delay(0.2)
+
+WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_sso/Page_sso/Page_sso/Page_sso/Page_icon-app/Page_icon-app/Page_icon-app/Page_icon-app/li_OPENED'))
 
 WebUI.click(findTestObject('Object Repository/Page_icon-app/svg'))
 

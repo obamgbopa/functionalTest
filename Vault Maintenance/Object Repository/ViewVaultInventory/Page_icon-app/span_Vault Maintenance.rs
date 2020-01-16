@@ -3,7 +3,7 @@
    <description></description>
    <name>span_Vault Maintenance</name>
    <tag></tag>
-   <elementGuidId>7a26f2b4-25cb-402c-8a25-984d67d50b0f</elementGuidId>
+   <elementGuidId>85c8fe08-ba3d-4fb7-b90f-784e3cd13dfa</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -74,26 +74,5 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[32]/a/span</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='__layout']/div/aside/div/nav/ul/li[34]/a/span</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Top-up Deposit Account'])[1]/following::span[3]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//li[34]/a/span</value>
    </webElementXpaths>
 </WebElementEntity>

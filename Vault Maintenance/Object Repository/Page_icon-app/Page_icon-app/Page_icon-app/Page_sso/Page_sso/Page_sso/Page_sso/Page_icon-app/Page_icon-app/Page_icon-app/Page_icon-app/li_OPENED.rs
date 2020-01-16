@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>li_QC100 - ARAKUNRIN AKEREDOLU</name>
+   <name>li_OPENED</name>
    <tag></tag>
-   <elementGuidId>db828d74-1185-44c0-9e95-b50c98ae9509</elementGuidId>
+   <elementGuidId>1a6bff41-1177-428c-a6fd-5b6627904332</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='BRAN11 - BRANCHTEST'])[1]/following::li[3]</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Alt'])[2]/following::li[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>id(&quot;36bff142-370d-40d1-975b-83f47b5a7fb2&quot;)/ul[@class=&quot;ant-select-dropdown-menu ant-select-dropdown-menu-vertical ant-select-dropdown-menu-root&quot;]/li[@class=&quot;ant-select-dropdown-menu-item ant-select-dropdown-menu-item-active&quot;][count(. | //*[(text() = 'QC100 - ARAKUNRIN AKEREDOLU
-          ' or . = 'QC100 - ARAKUNRIN AKEREDOLU
-          ')]) = count(//*[(text() = 'QC100 - ARAKUNRIN AKEREDOLU
-          ' or . = 'QC100 - ARAKUNRIN AKEREDOLU
+         <value>id(&quot;93095c37-c277-43fb-acdd-a834cc62e748&quot;)/ul[@class=&quot;ant-select-dropdown-menu ant-select-dropdown-menu-vertical ant-select-dropdown-menu-root&quot;]/li[@class=&quot;ant-select-dropdown-menu-item ant-select-dropdown-menu-item-active&quot;][count(. | //*[(text() = '
+            OPENED
+          ' or . = '
+            OPENED
+          ')]) = count(//*[(text() = '
+            OPENED
+          ' or . = '
+            OPENED
           ')])]</value>
       </entry>
    </selectorCollection>
@@ -53,7 +57,8 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>QC100 - ARAKUNRIN AKEREDOLU
+      <value>
+            OPENED
           </value>
    </webElementProperties>
    <webElementProperties>
@@ -61,34 +66,41 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;36bff142-370d-40d1-975b-83f47b5a7fb2&quot;)/ul[@class=&quot;ant-select-dropdown-menu ant-select-dropdown-menu-vertical ant-select-dropdown-menu-root&quot;]/li[@class=&quot;ant-select-dropdown-menu-item ant-select-dropdown-menu-item-active&quot;]</value>
+      <value>id(&quot;93095c37-c277-43fb-acdd-a834cc62e748&quot;)/ul[@class=&quot;ant-select-dropdown-menu ant-select-dropdown-menu-vertical ant-select-dropdown-menu-root&quot;]/li[@class=&quot;ant-select-dropdown-menu-item ant-select-dropdown-menu-item-active&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='36bff142-370d-40d1-975b-83f47b5a7fb2']/ul/li[2]</value>
+      <value>//div[@id='93095c37-c277-43fb-acdd-a834cc62e748']/ul/li</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='QA004 - FIYIN TITUS'])[1]/following::li[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='`'])[2]/following::li[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='BRAN11 - BRANCHTEST'])[1]/following::li[3]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alt'])[2]/following::li[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CLOSED'])[1]/preceding::li[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[10]/div/div/div/ul/li[2]</value>
+      <value>//div[13]/div/div/div/ul/li</value>
    </webElementXpaths>
 </WebElementEntity>
