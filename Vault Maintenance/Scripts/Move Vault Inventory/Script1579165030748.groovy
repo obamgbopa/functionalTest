@@ -22,13 +22,15 @@ WebUI.maximizeWindow()
 
 WebUI.navigateToUrl('http://192.168.5.46:9090/sso')
 
+not_run: WebUI.refresh()
+
 WebUI.setText(findTestObject('Object Repository/Page_sso/input_WELCOME BACK_ant-input ant-input-lg'), 'josh')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_sso/input_WELCOME BACK_ant-input ant-input-lg_1'), '3iF79iufxPg=')
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_sso/input_WELCOME BACK_ant-input ant-input-lg_1'), '/q2iZ2sPEiM=')
 
 WebUI.click(findTestObject('Object Repository/Page_sso/button_Login'))
 
-WebUI.click(findTestObject('Object Repository/Page_sso/a_CORE'))
+WebUI.click(findTestObject('Page_sso/button_CORE_app__button'))
 
 WebUI.click(findTestObject('Page_icon-app/a_Build No_aside__toggler'))
 
@@ -42,7 +44,9 @@ WebUI.click(findTestObject('Page_icon-app/button_View Items'))
 
 WebUI.delay(1.2)
 
-WebUI.click(findTestObject('Move Vault Inventory/Page_icon-app/Page_icon-app/button_UNASSIGNED_table__btn ant-btn ant-btn-primary ant-dropdown-trigger'))
+WebUI.click(findTestObject('ViewVaultInventory/Page_sso/Page_icon-app/button_View Items'))
+
+WebUI.click(findTestObject('ViewVaultInventory/Page_icon-app/button_UNASSIGNED_table__btn ant-btn ant-bt_ed82db'))
 
 WebUI.click(findTestObject('Object Repository/Page_icon-app/a_Move'))
 
@@ -52,13 +56,15 @@ WebUI.click(findTestObject('Page_icon-app/li_TILL'))
 
 WebUI.click(findTestObject('Object Repository/Page_icon-app/div_select Destination Location'))
 
-WebUI.click(findTestObject('Object Repository/Page_icon-app/li_TELLER_090'))
+WebUI.click(findTestObject('Page_icon-app/li_TELLER_090'))
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/Page_icon-app/div_Remarks'))
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/Page_icon-app/div_INVENTORY MOVEMENT DETAILSInventory Cat_6f73fc'))
 
-WebUI.click(findTestObject('Object Repository/Page_icon-app/button_MOVE'))
+WebUI.click(findTestObject('Page_icon-app/button_MOVE'))
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Object Repository/Page_icon-app/button_No'))
 

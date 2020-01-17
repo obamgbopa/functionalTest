@@ -7,22 +7,22 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='MOVE'])[1]/following::li[1]</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='VAULT'])[2]/preceding::li[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>id(&quot;94abb76a-8559-4515-942d-8399015cd34e&quot;)/ul[@class=&quot;ant-select-dropdown-menu ant-select-dropdown-menu-vertical ant-select-dropdown-menu-root&quot;]/li[@class=&quot;ant-select-dropdown-menu-item ant-select-dropdown-menu-item-active&quot;][count(. | //*[(text() = '
+         <value>id(&quot;94abb76a-8559-4515-942d-8399015cd34e&quot;)/ul[@class=&quot;ant-select-dropdown-menu ant-select-dropdown-menu-vertical ant-select-dropdown-menu-root&quot;]/li[@class=&quot;ant-select-dropdown-menu-item ant-select-dropdown-menu-item-active&quot;][count(. | //*[@class = 'ant-select-dropdown-menu-item ant-select-dropdown-menu-item-active' and (text() = '
             TILL
           ' or . = '
             TILL
-          ')]) = count(//*[(text() = '
+          ')]) = count(//*[@class = 'ant-select-dropdown-menu-item ant-select-dropdown-menu-item-active' and (text() = '
             TILL
           ' or . = '
             TILL
           ')])]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,7 +39,7 @@
       <value>option</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>

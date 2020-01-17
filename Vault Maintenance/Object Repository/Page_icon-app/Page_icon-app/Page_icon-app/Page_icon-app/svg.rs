@@ -1,23 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>svg_2</name>
+   <name>svg</name>
    <tag></tag>
-   <elementGuidId>d7efeff5-9f90-48b8-8ccf-8378934d3bc1</elementGuidId>
-   <selectorCollection>
-      <entry>
-         <key>BASIC</key>
-         <value>/html[1]/body[1]/div[@class=&quot;ant-notification ant-notification-topRight&quot;]/span[1]/div[@class=&quot;ant-notification-notice ant-notification-notice-closable&quot;]/a[@class=&quot;ant-notification-notice-close&quot;]/i[@class=&quot;ant-notification-close-icon anticon anticon-close&quot;]/svg[1]</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value></value>
-      </entry>
-   </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <elementGuidId>c8559dc4-80f5-41d3-8ac9-97db8546ffa7</elementGuidId>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
@@ -35,7 +25,7 @@
       <matchCondition>equals</matchCondition>
       <name>data-icon</name>
       <type>Main</type>
-      <value>close</value>
+      <value>search</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,6 +67,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[1]/body[1]/div[@class=&quot;ant-notification ant-notification-topRight&quot;]/span[1]/div[@class=&quot;ant-notification-notice ant-notification-notice-closable&quot;]/a[@class=&quot;ant-notification-notice-close&quot;]/i[@class=&quot;ant-notification-close-icon anticon anticon-close&quot;]/svg[1]</value>
+      <value>/html[1]/body[1]/div[9]/div[@class=&quot;ant-drawer ant-drawer-right ant-drawer-open&quot;]/div[@class=&quot;ant-drawer-content-wrapper&quot;]/div[@class=&quot;ant-drawer-content&quot;]/div[@class=&quot;ant-drawer-wrapper-body&quot;]/div[@class=&quot;ant-drawer-body&quot;]/form[@class=&quot;ant-form ant-form-horizontal&quot;]/div[1]/div[1]/div[@class=&quot;ant-row-flex ant-row-flex-space-between&quot;]/div[@class=&quot;ant-col-12&quot;]/div[1]/div[1]/div[@class=&quot;ant-row ant-form-item ant-form-item-no-colon&quot;]/div[@class=&quot;ant-form-item-control-wrapper&quot;]/div[@class=&quot;ant-form-item-control&quot;]/span[@class=&quot;ant-form-item-children&quot;]/span[@class=&quot;ant-input ant-input-affix-wrapper ant-input-search ant-input-search-default&quot;]/span[@class=&quot;ant-input-suffix&quot;]/i[@class=&quot;ant-input-search-icon anticon anticon-search&quot;]/svg[1]</value>
    </webElementProperties>
 </WebElementEntity>

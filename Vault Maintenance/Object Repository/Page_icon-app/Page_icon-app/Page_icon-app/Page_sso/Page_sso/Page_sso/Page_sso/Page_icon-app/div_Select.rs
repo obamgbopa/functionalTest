@@ -3,7 +3,7 @@
    <description></description>
    <name>div_Select</name>
    <tag></tag>
-   <elementGuidId>33add6b6-a14f-4b45-9554-2e4cdba81a8f</elementGuidId>
+   <elementGuidId>0a06894b-f034-4cb0-a8aa-eead81be4915</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -95,12 +95,5 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[6]/span/div/div[2]/div/span/div/div</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Select'])[3]/following::div[9]</value>
    </webElementXpaths>
 </WebElementEntity>

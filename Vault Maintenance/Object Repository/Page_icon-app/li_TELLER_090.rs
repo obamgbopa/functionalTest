@@ -7,7 +7,19 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='33bbc5d8-3718-4ad0-b99c-dff345eb7520']/ul/li[2]</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='EXTERNAL-AGENCY'])[1]/following::li[2]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;33bbc5d8-3718-4ad0-b99c-dff345eb7520&quot;)/ul[@class=&quot;ant-select-dropdown-menu ant-select-dropdown-menu-vertical ant-select-dropdown-menu-root&quot;]/li[@class=&quot;ant-select-dropdown-menu-item ant-select-dropdown-menu-item-active&quot;][count(. | //*[(text() = '
+            TELLER_090
+          ' or . = '
+            TELLER_090
+          ')]) = count(//*[(text() = '
+            TELLER_090
+          ' or . = '
+            TELLER_090
+          ')])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -50,7 +62,7 @@
           </value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>

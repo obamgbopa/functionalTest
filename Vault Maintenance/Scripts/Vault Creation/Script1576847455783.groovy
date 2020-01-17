@@ -18,19 +18,23 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 WebUI.openBrowser('')
 
+WebUI.maximizeWindow()
+
 WebUI.navigateToUrl('http://192.168.5.46:9090/sso')
 
-WebUI.maximizeWindow()
+not_run: WebUI.refresh()
 
 WebUI.setText(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_sso/input_WELCOME BACK_ant-input ant-input-lg'), 
     'josh')
 
 WebUI.setEncryptedText(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_sso/Page_sso/input_WELCOME BACK_ant-input ant-input-lg'), 
-    '3iF79iufxPg=')
+    '/q2iZ2sPEiM=')
 
 WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_sso/Page_sso/Page_sso/button_Login'))
 
-WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_sso/Page_sso/Page_sso/Page_sso/a_CORE'))
+not_run: WebUI.delay(4)
+
+WebUI.click(findTestObject('Page_sso/button_CORE_app__button'))
 
 WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_sso/Page_sso/Page_sso/Page_icon-app/a_Build No_aside__toggler'))
 
@@ -58,11 +62,13 @@ WebUI.delay(1)
 
 WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_sso/Page_sso/Page_sso/Page_sso/Page_icon-app/Page_icon-app/Page_icon-app/li_QC100 - ARAKUNRIN AKEREDOLU'))
 
-WebUI.click(findTestObject('Object Repository/Page_icon-app/div_'))
+WebUI.delay(1)
 
-WebUI.delay(2.2)
+WebUI.click(findTestObject('Page_Icon Login/Page_icon-app/div_'))
 
-WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_sso/Page_sso/Page_sso/Page_sso/Page_icon-app/Page_icon-app/li_QA004 - FIYIN TITUS'))
+not_run: WebUI.delay(2.2)
+
+WebUI.click(findTestObject('Page_Icon Login/Page_icon-app/li_QA004 - FIYIN TITUS'))
 
 WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_icon-app/input_Definition Date_ant-calendar-picker-input ant-input'))
 
@@ -72,23 +78,29 @@ WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_icon-
 
 WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_icon-app/li_BOTH'))
 
-WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_sso/Page_sso/Page_sso/Page_sso/Page_icon-app/Page_icon-app/Page_icon-app/Page_icon-app/div_Select'))
+WebUI.click(findTestObject('Page_Icon Login/Page_icon-app/div_Select'))
 
-WebUI.delay(0.2)
+not_run: WebUI.delay(0.2)
 
-WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_sso/Page_sso/Page_sso/Page_sso/Page_icon-app/Page_icon-app/Page_icon-app/Page_icon-app/li_OPENED'))
+WebUI.click(findTestObject('Page_Icon Login/Page_icon-app/li_OPENED'))
 
-WebUI.click(findTestObject('Object Repository/Page_icon-app/svg'))
+WebUI.verifyElementPresent(findTestObject('Page_Icon Login/Page_icon-app/input_Spacer_ant-input'), 0)
 
-WebUI.click(findTestObject('Object Repository/Page_icon-app/button_Search'))
+WebUI.click(findTestObject('Page_Icon Login/Page_icon-app/Page_icon-app/svg'))
 
-WebUI.click(findTestObject('Object Repository/Page_icon-app/button_Select'))
+WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_sso/Page_icon-app/button_Search'))
 
-WebUI.click(findTestObject('Object Repository/Page_icon-app/div_Select'))
+WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_sso/Page_icon-app/button_Select'))
 
-WebUI.click(findTestObject('Object Repository/Page_icon-app/li_NGN - NIGERIAN NAIRA'))
+WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_sso/Page_icon-app/div_Select'))
 
-WebUI.click(findTestObject('Object Repository/Page_icon-app/button_Add Currency Limit'))
+WebUI.delay(1.6)
+
+WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_sso/Page_icon-app/li_NGN - NIGERIAN NAIRA'))
+
+WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_sso/Page_icon-app/button_Add Currency Limit'))
 
 WebUI.click(findTestObject('Object Repository/Page_icon-app/button_Create Vault'))
+
+WebUI.closeBrowser()
 
