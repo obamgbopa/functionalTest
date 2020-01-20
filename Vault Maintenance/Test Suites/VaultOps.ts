@@ -40,4 +40,22 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Split Inventory</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>91f89691-004c-46ef-8e30-c64c2f89520d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Move Multiple</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0f59d46e-1993-4e83-bbb1-4c8a838defaa</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Merge Vault</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b067489a-d33b-4d76-9b0a-f883bbbbf0a1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/View Cash Vault</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
