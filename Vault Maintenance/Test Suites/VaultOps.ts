@@ -58,4 +58,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/View Cash Vault</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>9dd798f6-bb80-4135-8044-c45ab5ddff9a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Edit Cash Vault</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
