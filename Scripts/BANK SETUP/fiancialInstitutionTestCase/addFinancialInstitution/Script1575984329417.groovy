@@ -1,0 +1,115 @@
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+WebUI.callTestCase(findTestCase('LOGIN'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('BANK_SETUP_OR/countryOR/addAndDeleteCIty/Page_icon-app/a_Branch_aside__toggler'))
+
+WebUI.click(findTestObject('BANK_SETUP_OR/spyORRR/Page_icon-app/span_Bank Setup'))
+
+WebUI.click(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/Page_icon-app/a_Financial Institution'))
+
+WebUI.click(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/Page_icon-app/button_Add Institution'))
+
+WebUI.click(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/Page_icon-app/div_'))
+
+WebUI.click(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/spy/Page_icon-app/li_FOREIGN'))
+
+WebUI.click(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/spy/Page_icon-app/input_Bank Code_ant-input'))
+
+WebUI.setText(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/spy/Page_icon-app/input_Bank Code_ant-input'), 
+    CustomKeywords.'Keywords.randomData.TestDataGenerator.set_RandomNumber'(4))
+
+WebUI.click(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/spy/Page_icon-app/Page_icon-app/input_Bank Name_ant-input'))
+
+WebUI.setText(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/spy/Page_icon-app/Page_icon-app/input_Bank Name_ant-input'), 
+    CustomKeywords.'Keywords.randomData.TestDataGenerator.getRandomName'(1, 3) + ' BANK')
+
+WebUI.click(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/spy/Page_icon-app/input_Branch Code_ant-input'))
+
+WebUI.setText(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/spy/Page_icon-app/input_Branch Code_ant-input'), 
+    CustomKeywords.'Keywords.randomData.TestDataGenerator.set_RandomNumber'(3))
+
+WebUI.click(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/spy/Page_icon-app/input_Bank Address_ant-input'))
+
+WebUI.setText(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/spy/Page_icon-app/input_Bank Address_ant-input'), 
+    CustomKeywords.'Keywords.randomData.TestDataGenerator.getRandomCity'())
+
+WebUI.click(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/newSpy/Page_icon-app/div_'))
+
+WebUI.setText(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/spy/Page_icon-app/input_Country_ant-select-search__field'), 
+    'NIGERIA')
+
+WebUI.click(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/spy/Page_icon-app/li_NG - NIGERIA'))
+
+WebUI.click(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/newSpy/spyee/Page_icon-app/div_'), 
+    FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.setText(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/newSpy/spyee/Page_icon-app/input_State_ant-select-search__field'), 
+    'ONDO')
+
+WebUI.click(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/newSpy/spyee/Page_icon-app/li_18 - ONDO'))
+
+WebUI.click(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/newSpy/updatedSpy/Page_icon-app/div_'))
+
+WebUI.setText(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/newSpy/updatedSpy/Page_icon-app/input_City_ant-select-search__field'), 
+    'AKURE')
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/newSpy/Page_icon-app/Page_icon-app/li_0055 - AKURE'))
+
+WebUI.click(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/spy/Page_icon-app/input_Zip Code_ant-input'))
+
+WebUI.setText(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/spy/Page_icon-app/input_Zip Code_ant-input'), 
+    CustomKeywords.'Keywords.randomData.TestDataGenerator.set_RandomNumber'(8))
+
+WebUI.click(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/spy/Page_icon-app/input_MICR Bank Code_ant-input'))
+
+WebUI.setText(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/spy/Page_icon-app/input_MICR Bank Code_ant-input'), 
+    CustomKeywords.'Keywords.randomData.TestDataGenerator.set_RandomNumber'(4))
+
+WebUI.click(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/spy/Page_icon-app/input_MICR Branch Code_ant-input'))
+
+WebUI.setText(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/spy/Page_icon-app/input_MICR Branch Code_ant-input'), 
+    CustomKeywords.'Keywords.randomData.TestDataGenerator.set_RandomNumber'(2))
+
+WebUI.click(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/spy/Page_icon-app/input_MICR center Code_ant-input'))
+
+WebUI.setText(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/spy/Page_icon-app/input_MICR center Code_ant-input'), 
+    CustomKeywords.'Keywords.randomData.TestDataGenerator.set_RandomNumber'(3))
+
+WebUI.click(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/newSpy/Page_icon-app/Page_icon-app/div_'))
+
+WebUI.click(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/spy/Page_icon-app/li_CREDIT_CARD'))
+
+WebUI.click(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/spy/Page_icon-app/input_Business Identifier Code (BIC)_ant-input'))
+
+WebUI.setText(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/spy/Page_icon-app/input_Business Identifier Code (BIC)_ant-input'), 
+    CustomKeywords.'Keywords.randomData.TestDataGenerator.set_RandomNumber'(3))
+
+WebUI.click(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/spy/Page_icon-app/button_Add Payment System'))
+
+WebUI.click(findTestObject('BANK_SETUP_OR/financialInstitutionOR/addFinancialInstitution/spy/Page_icon-app/button_Submit'))
+
+WebUI.verifyTextPresent('Success', false)
+
+WebUI.delay(2)
+
+WebUI.closeBrowser()
+
