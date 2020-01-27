@@ -22,7 +22,7 @@ WebUI.maximizeWindow()
 
 WebUI.navigateToUrl('http://192.168.5.46:9090/sso')
 
-not_run: WebUI.refresh()
+WebUI.refresh()
 
 WebUI.setText(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_sso/input_WELCOME BACK_ant-input ant-input-lg'), 
     'josh')
