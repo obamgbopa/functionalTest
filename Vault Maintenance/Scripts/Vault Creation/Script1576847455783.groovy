@@ -104,5 +104,7 @@ WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_sso/P
 
 WebUI.click(findTestObject('Object Repository/Page_icon-app/button_Create Vault'))
 
+WebUI.verifyTextPresent('New vault', false)
+
 WebUI.closeBrowser()
 
