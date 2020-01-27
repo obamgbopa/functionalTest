@@ -22,6 +22,10 @@ WebUI.maximizeWindow()
 
 WebUI.navigateToUrl('http://192.168.5.46:9090/sso')
 
+WebUI.navigateToUrl('http://192.168.5.46:9090/sso')
+
+WebUI.refresh()
+
 WebUI.setText(findTestObject('Object Repository/ViewCashVault/Page_sso/input_WELCOME BACK_ant-input ant-input-lg'), 'josh')
 
 WebUI.setEncryptedText(findTestObject('Object Repository/ViewCashVault/Page_sso/input_WELCOME BACK_ant-input ant-input-lg_1'), 
@@ -37,7 +41,7 @@ WebUI.click(findTestObject('Object Repository/ViewCashVault/Page_icon-app/span_V
 
 WebUI.click(findTestObject('Object Repository/ViewCashVault/Page_icon-app/a_Branch Vault'))
 
-WebUI.click(findTestObject('Object Repository/ViewCashVault/Page_icon-app/div_Cash Details'))
+WebUI.click(findTestObject('Move Vault Inventory/Page_icon-app/Page_icon-app/span_Vault Maintenance'))
 
 WebUI.click(findTestObject('Object Repository/ViewCashVault/Page_icon-app/button_True_table__btn ant-btn ant-btn-prim_aec520'))
 

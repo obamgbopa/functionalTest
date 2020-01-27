@@ -22,6 +22,8 @@ WebUI.maximizeWindow()
 
 WebUI.navigateToUrl('http://192.168.5.46:9090/sso')
 
+WebUI.navigateToUrl('http://192.168.5.46:9090/sso')
+
 not_run: WebUI.refresh()
 
 WebUI.setText(findTestObject('Object Repository/View Vault/Page_sso/input_WELCOME BACK_ant-input ant-input-lg'), 'josh')
@@ -35,7 +37,7 @@ WebUI.click(findTestObject('Page_sso/button_CORE_app__button'))
 
 WebUI.click(findTestObject('Object Repository/View Vault/Page_icon-app/a_Build No_aside__toggler'))
 
-WebUI.click(findTestObject('Object Repository/View Vault/Page_icon-app/span_Vault Maintenance'))
+WebUI.click(findTestObject('Move Vault Inventory/Page_icon-app/Page_icon-app/span_Vault Maintenance'))
 
 WebUI.setText(findTestObject('Object Repository/View Vault/Page_icon-app/input_All Vault-Tills_ant-input'), 'vault678')
 
