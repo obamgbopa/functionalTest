@@ -16,20 +16,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('http://192.168.5.46:9090/sso/')
-
-WebUI.refresh()
-
-WebUI.maximizeWindow()
-
-WebUI.setText(findTestObject('Object Repository/Cash Deposit/Page_sso/input_WELCOME BACK_ant-input ant-input-lg'), 'LBT4001')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Cash Deposit/Page_sso/input_WELCOME BACK_ant-input ant-input-lg_1'), 
-    '3iF79iufxPg=')
-
-WebUI.click(findTestObject('Object Repository/Cash Deposit/Page_sso/button_Login'))
+WebUI.callTestCase(findTestCase('Transaction Maintenance/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Cash Deposit/Page_sso/button_CORE_app__button'))
 
