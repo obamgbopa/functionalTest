@@ -42,6 +42,8 @@ WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_sso/P
 
 WebUI.click(findTestObject('Move Vault Inventory/Page_icon-app/Page_icon-app/span_Vault Maintenance'))
 
+WebUI.click(findTestObject('Edit Cash Vault/Page_icon-app/a_Manage Vaults'))
+
 WebUI.click(findTestObject('Page_icon-app/Page_icon-app/Page_icon-app/Page_sso/Page_sso/Page_sso/Page_icon-app/button_Define Vault'))
 
 WebUI.setText(findTestObject('Object Repository/Page_icon-app/input_Vault Id_ant-input'), 'VAULT1212')
