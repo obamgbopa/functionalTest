@@ -35,7 +35,9 @@ WebUI.click(findTestObject('Object Repository/Search and View/Page_sso/button_CO
 
 WebUI.click(findTestObject('Object Repository/Search and View/Page_icon-app/a_Build No_aside__toggler'))
 
-WebUI.click(findTestObject('Object Repository/Search and View/Page_icon-app/span_Cash Account Maintenance'))
+WebUI.click(findTestObject('Page_icon-app/span_Cash Account Maintenance'))
+
+WebUI.click(findTestObject('Page_icon-app/Page_icon-app/a_Manage Till'))
 
 WebUI.setText(findTestObject('Object Repository/Search and View/Page_icon-app/input_ADD TILL_ant-input'), 'test123')
 

@@ -3,11 +3,11 @@
    <description></description>
    <name>span_Cash Account Maintenance</name>
    <tag></tag>
-   <elementGuidId>85b23395-5313-483c-8d23-a640cb384319</elementGuidId>
+   <elementGuidId>2b5fa856-5508-4b46-835b-157866ef1e14</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Branch Statement'])[1]/following::span[1]</value>
+         <value>//div[@id='__layout']/div/aside/div/nav/ul/li[5]/a/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

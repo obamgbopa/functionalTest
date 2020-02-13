@@ -26,7 +26,7 @@ WebUI.navigateToUrl('http://192.168.5.46:9090/sso')
 WebUI.setText(findTestObject('Object Repository/De-Assign Till/Page_sso/input_WELCOME BACK_ant-input ant-input-lg'), 'josh')
 
 WebUI.setEncryptedText(findTestObject('Object Repository/De-Assign Till/Page_sso/input_WELCOME BACK_ant-input ant-input-lg_1'), 
-    '/q2iZ2sPEiM=')
+	'/q2iZ2sPEiM=')
 
 WebUI.click(findTestObject('Object Repository/De-Assign Till/Page_sso/button_Login'))
 
@@ -34,7 +34,9 @@ WebUI.click(findTestObject('Object Repository/De-Assign Till/Page_sso/button_COR
 
 WebUI.click(findTestObject('Object Repository/De-Assign Till/Page_icon-app/a_Build No_aside__toggler'))
 
-WebUI.click(findTestObject('Object Repository/De-Assign Till/Page_icon-app/span_Cash Account Maintenance'))
+WebUI.click(findTestObject('Page_icon-app/span_Cash Account Maintenance'))
+
+WebUI.click(findTestObject('Page_icon-app/Page_icon-app/a_Manage Till'))
 
 WebUI.setText(findTestObject('Object Repository/De-Assign Till/Page_icon-app/input_ADD TILL_ant-input'), 'ajs002')
 

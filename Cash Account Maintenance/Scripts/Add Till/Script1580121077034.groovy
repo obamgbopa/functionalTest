@@ -34,7 +34,9 @@ WebUI.click(findTestObject('Object Repository/Page_sso/button_CORE_app__button')
 
 WebUI.click(findTestObject('Object Repository/Page_icon-app/a_Build No_aside__toggler'))
 
-WebUI.click(findTestObject('Object Repository/Page_icon-app/span_Cash Account Maintenance'))
+WebUI.click(findTestObject('Page_icon-app/span_Cash Account Maintenance'))
+
+WebUI.click(findTestObject('Page_icon-app/Page_icon-app/a_Manage Till'))
 
 WebUI.click(findTestObject('Object Repository/Page_icon-app/button_ADD TILL'))
 

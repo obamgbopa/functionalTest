@@ -40,4 +40,22 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Edit Till</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>a969a74a-856b-4d06-9555-9193f715f758</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Branch Cash Till View</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6e815384-c78b-489f-9f2d-bcfd0270d5f9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Branch Cash Till De-Assign</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>cbfa5ced-3d28-4f5c-a620-b164d760f3d9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Branch Cash Till Assign</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
