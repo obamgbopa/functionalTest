@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//input[@value=''])[4]</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Treasury Rate'])[2]/following::input[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

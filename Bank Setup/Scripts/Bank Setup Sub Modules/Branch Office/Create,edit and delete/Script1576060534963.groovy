@@ -16,13 +16,20 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+int num = GlobalVariable.num
+
+Random rnd = new Random()
+
+randomNum = rnd.nextInt(10 ** num)
+
 WebUI.callTestCase(findTestCase('Bank Setup Default link/Bank_Setup_Default'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Branch Office/Page_icon-app/a_Branch Office'))
 
 WebUI.click(findTestObject('Object Repository/Branch Office/Page_icon-app/button_Add Branch'))
 
-WebUI.setText(findTestObject('Object Repository/Branch Office/Page_icon-app/input_Code_ant-input'), '666')
+WebUI.setText(findTestObject('Object Repository/Branch Office/Page_icon-app/input_Code_ant-input'), 'BOF' + String.valueOf(
+        randomNum))
 
 WebUI.setText(findTestObject('Branch Office Spy/Page_icon-app/input_Name_ant-input'), 'TOMMIE EXCLUSIVE')
 
@@ -66,7 +73,7 @@ not_run: WebUI.click(findTestObject('Branch Office Spy/Page_icon-app/li_PRC - PR
 
 WebUI.click(findTestObject('Branch Office Spy/Page_icon-app/li_PROFIT_CENTER - null'))
 
-WebUI.click(findTestObject('Branch Office Spy/Page_icon-app/li_SOL - null'))
+not_run: WebUI.click(findTestObject('Branch Office Spy/Page_icon-app/li_SOL - null'))
 
 WebUI.click(findTestObject('Object Repository/Branch Office/Page_icon-app/div_Transaction Details'))
 
@@ -88,7 +95,15 @@ WebUI.click(findTestObject('Object Repository/Branch Office/Page_icon-app/div_Pa
 
 WebUI.setText(findTestObject('Branch Office Spy/Page_icon-app/input_BKE Arrangement_ant-input'), '1908765')
 
-WebUI.click(findTestObject('Object Repository/Branch Office/Page_icon-app/button_Submit'))
+WebUI.click(findTestObject('Branch Office Spy/Page_icon-app/div_EOD Details'))
+
+WebUI.click(findTestObject('Branch Office Spy/Page_icon-app/div_branch_eod'))
+
+WebUI.click(findTestObject('Branch Office Spy/Page_icon-app/li_CUTOFF - CUT OFF'))
+
+WebUI.click(findTestObject('Branch Office Spy/Page_icon-app/button_Submit'))
+
+WebUI.verifyTextPresent('Bank Branch is Created', false)
 
 WebUI.click(findTestObject('Object Repository/Branch Office/Page_icon-app/button_Cash Transaction allowed_ant-switch'))
 
@@ -98,13 +113,19 @@ WebUI.click(findTestObject('Branch Office Spy/Page_icon-app/div_city_edit'))
 
 WebUI.click(findTestObject('Branch Office Spy/Page_icon-app/li_APAPA_edit'))
 
-WebUI.click(findTestObject('Object Repository/Branch Office/Page_icon-app/button_Submit'))
+WebUI.click(findTestObject('Branch Office Spy/Page_icon-app/button_Submit_edit'))
+
+WebUI.verifyTextPresent('Bank Branch is Updated', false)
 
 WebUI.click(findTestObject('Object Repository/Branch Office/Page_icon-app/button_Cash Transaction allowed_ant-switch'))
 
-WebUI.click(findTestObject('Object Repository/Branch Office/Page_icon-app/a_ Disable'))
+WebUI.click(findTestObject('Branch Office Spy/Page_icon-app/a_ Delete'))
 
 WebUI.click(findTestObject('Object Repository/Branch Office/Page_icon-app/button_Yes'))
+
+WebUI.verifyTextPresent(('BOF' + String.valueOf(randomNum)) + ' is deleted', false)
+
+WebUI.delay(2)
 
 WebUI.closeBrowser()
 

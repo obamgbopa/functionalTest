@@ -18,20 +18,23 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://192.168.5.46:9090/sso/sso/login/')
-
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('Object Repository/Bank_Setup_Default/Page_Icon Login/input_WELCOME BACK_username'), 'TOMMIE')
+WebUI.navigateToUrl('http://192.168.5.46:9090/sso/')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Bank_Setup_Default/Page_Icon Login/input_WELCOME BACK_password'), 
-    'RlZsoEm1HLfPO8dtOqKUMA==')
+WebUI.refresh()
 
-WebUI.click(findTestObject('Object Repository/Bank_Setup_Default/Page_Icon Login/button_Login'))
+WebUI.setText(findTestObject('Object Repository/New Bank_setup_default/Page_sso/input_WELCOME BACK_ant-input ant-input-lg'), 
+    'TOMMIE')
 
-WebUI.click(findTestObject('Object Repository/Bank_Setup_Default/Page_icon-app/div_Applications_item__icon'))
+WebUI.setEncryptedText(findTestObject('Object Repository/New Bank_setup_default/Page_sso/input_WELCOME BACK_ant-input ant-input-lg_1'), 
+    'p4o62hMn+h+hRrDJmCvZoQ==')
 
-WebUI.click(findTestObject('Object Repository/Bank_Setup_Default/Page_icon-app/a_Branch_aside__toggler'))
+WebUI.click(findTestObject('Object Repository/New Bank_setup_default/Page_sso/button_Login'))
 
-WebUI.click(findTestObject('Object Repository/Bank_Setup_Default/Page_icon-app/span_Bank Setup'))
+WebUI.click(findTestObject('Bank setup link spy/Page_sso/button_CORE_app__button'))
+
+WebUI.click(findTestObject('Object Repository/New Bank_setup_default/Page_icon-app/a_Build No_aside__toggler'))
+
+WebUI.click(findTestObject('Object Repository/New Bank_setup_default/Page_icon-app/span_Bank Setup'))
 

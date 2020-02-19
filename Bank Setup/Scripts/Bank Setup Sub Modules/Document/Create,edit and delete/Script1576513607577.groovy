@@ -16,29 +16,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+int num = GlobalVariable.num
 
-WebUI.navigateToUrl('http://192.168.5.46:9090/sso/sso/login/')
+Random rnd = new Random()
 
-WebUI.maximizeWindow()
+randomNum = rnd.nextInt(10 ** num)
 
-WebUI.setText(findTestObject('Object Repository/Document/Page_Icon Login/input_WELCOME BACK_username'), 'TOMMIE')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Document/Page_Icon Login/input_WELCOME BACK_password'), 'RlZsoEm1HLfPO8dtOqKUMA==')
-
-WebUI.click(findTestObject('Object Repository/Document/Page_Icon Login/button_Login'))
-
-WebUI.click(findTestObject('Object Repository/Document/Page_icon-app/div_Applications_item__icon'))
-
-WebUI.click(findTestObject('Object Repository/Document/Page_icon-app/a_Build No_aside__toggler'))
-
-WebUI.click(findTestObject('Object Repository/Document/Page_icon-app/span_Bank Setup'))
+WebUI.callTestCase(findTestCase('Bank Setup Default link/Bank_Setup_Default'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Document/Page_icon-app/a_Document'))
 
 WebUI.click(findTestObject('Object Repository/Document/Page_icon-app/button_Create Document'))
 
-WebUI.setText(findTestObject('Document Spy/Page_icon-app/input_Code_ant-input'), 'TEST001')
+WebUI.setText(findTestObject('Document Spy/Page_icon-app/input_Code_ant-input'), 'DOC' + String.valueOf(randomNum))
 
 WebUI.setText(findTestObject('Document Spy/Page_icon-app/input_Description_ant-input'), 'TESTING')
 
@@ -48,17 +38,25 @@ WebUI.click(findTestObject('Object Repository/Document/Page_icon-app/li_CERT - C
 
 WebUI.click(findTestObject('Object Repository/Document/Page_icon-app/button_Submit'))
 
+WebUI.verifyTextPresent('Document Code is Created', false)
+
 WebUI.click(findTestObject('Object Repository/Document/Page_icon-app/button_CERT_table__btn ant-btn ant-btn-prim_fc48e0'))
 
 WebUI.click(findTestObject('Object Repository/Document/Page_icon-app/a_ Edit'))
 
 WebUI.click(findTestObject('Object Repository/Document/Page_icon-app/button_Edit'))
 
+WebUI.verifyTextPresent('Document Code is Updated', false)
+
 WebUI.click(findTestObject('Object Repository/Document/Page_icon-app/button_CERT_table__btn ant-btn ant-btn-prim_fc48e0'))
 
 WebUI.click(findTestObject('Object Repository/Document/Page_icon-app/a_ Delete'))
 
 WebUI.click(findTestObject('Object Repository/Document/Page_icon-app/button_Yes'))
+
+WebUI.verifyTextPresent(('DOC' + String.valueOf(randomNum)) + ' is Deleted', false)
+
+WebUI.delay(1)
 
 WebUI.closeBrowser()
 

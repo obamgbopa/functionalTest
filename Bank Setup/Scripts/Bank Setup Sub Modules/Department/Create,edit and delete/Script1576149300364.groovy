@@ -16,29 +16,20 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+int num = GlobalVariable.num
 
-WebUI.navigateToUrl('http://192.168.5.46:9090/sso/sso/login/')
+Random rnd = new Random()
 
-WebUI.maximizeWindow()
+randomNum = rnd.nextInt(10 ** num)
 
-WebUI.setText(findTestObject('Object Repository/Department/Page_Icon Login/input_WELCOME BACK_username'), 'TOMMIE')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Department/Page_Icon Login/input_WELCOME BACK_password'), 'RlZsoEm1HLfPO8dtOqKUMA==')
-
-WebUI.click(findTestObject('Object Repository/Department/Page_Icon Login/button_Login'))
-
-WebUI.click(findTestObject('Object Repository/Department/Page_icon-app/div_Applications_item__icon'))
-
-WebUI.click(findTestObject('Object Repository/Department/Page_icon-app/a_Branch_aside__toggler'))
-
-WebUI.click(findTestObject('Object Repository/Department/Page_icon-app/span_Bank Setup'))
+WebUI.callTestCase(findTestCase('Bank Setup Default link/Bank_Setup_Default'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Department/Page_icon-app/a_Department'))
 
 WebUI.click(findTestObject('Object Repository/Department/Page_icon-app/button_Create Department'))
 
-WebUI.setText(findTestObject('Object Repository/Department/Page_icon-app/input_Code_ant-input'), 'TOM099')
+WebUI.setText(findTestObject('Object Repository/Department/Page_icon-app/input_Code_ant-input'), 'TOM' + String.valueOf(
+        randomNum))
 
 WebUI.setText(findTestObject('department spy/Page_icon-app/input_Name_ant-input'), 'TEST')
 
@@ -48,17 +39,25 @@ WebUI.click(findTestObject('department spy/Page_icon-app/li_TEST_DPT_GRP'))
 
 WebUI.click(findTestObject('Object Repository/Department/Page_icon-app/button_Submit'))
 
+WebUI.verifyTextPresent('Department is Created', false)
+
 WebUI.click(findTestObject('Object Repository/Department/Page_icon-app/button_TEST_DPT_GRP_table__btn ant-btn ant-_7646cc'))
 
 WebUI.click(findTestObject('Object Repository/Department/Page_icon-app/a_ Edit'))
 
 WebUI.click(findTestObject('Object Repository/Department/Page_icon-app/button_Edit'))
 
+WebUI.verifyTextPresent('Department is Updated', false)
+
 WebUI.click(findTestObject('Object Repository/Department/Page_icon-app/button_TEST_DPT_GRP_table__btn ant-btn ant-_7646cc'))
 
 WebUI.click(findTestObject('Object Repository/Department/Page_icon-app/a_ Delete'))
 
 WebUI.click(findTestObject('Object Repository/Department/Page_icon-app/button_Yes'))
+
+WebUI.verifyTextPresent(('TOM' + String.valueOf(randomNum)) + ' is deleted', false)
+
+WebUI.delay(1)
 
 WebUI.closeBrowser()
 

@@ -16,13 +16,20 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+int num = GlobalVariable.num
+
+Random rnd = new Random()
+
+randomNum = rnd.nextInt(10 ** num)
+
 WebUI.callTestCase(findTestCase('Bank Setup Default link/Bank_Setup_Default'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Account Officer/Page_icon-app/a_Account Officer'))
 
 WebUI.click(findTestObject('Object Repository/Account Officer/Page_icon-app/button_Add Account Officer'))
 
-WebUI.setText(findTestObject('Object Repository/Account Officer/Page_icon-app/input_Officer Code_ant-input'), '9909')
+WebUI.setText(findTestObject('Object Repository/Account Officer/Page_icon-app/input_Officer Code_ant-input'), 'ACO' + String.valueOf(
+        randomNum))
 
 WebUI.click(findTestObject('Object Repository/Account Officer/Page_icon-app/div_'))
 
@@ -30,11 +37,15 @@ WebUI.click(findTestObject('Account Officer Spy/Page_icon-app/Page_icon-app/li_Q
 
 WebUI.click(findTestObject('Object Repository/Account Officer/Page_icon-app/button_Submit'))
 
+WebUI.verifyTextPresent('Account Officer is Created', false)
+
 WebUI.click(findTestObject('Object Repository/Account Officer/Page_icon-app/button_EMPLOYEE_02_table__btn ant-btn ant-b_fd627e'))
 
 WebUI.click(findTestObject('Object Repository/Account Officer/Page_icon-app/a_ Edit'))
 
 WebUI.click(findTestObject('Object Repository/Account Officer/Page_icon-app/button_Edit'))
+
+WebUI.verifyTextPresent('Account Officer is Updated', false)
 
 WebUI.click(findTestObject('Object Repository/Account Officer/Page_icon-app/button_EMPLOYEE_02_table__btn ant-btn ant-b_fd627e'))
 
@@ -42,5 +53,8 @@ WebUI.click(findTestObject('Object Repository/Account Officer/Page_icon-app/a_ D
 
 WebUI.click(findTestObject('Object Repository/Account Officer/Page_icon-app/button_Yes'))
 
-WebUI.closeBrowser()
+WebUI.verifyTextPresent(('ACO' + String.valueOf(randomNum)) + ' is deleted', false)
 
+WebUI.delay(1)
+
+WebUI.closeBrowser()
