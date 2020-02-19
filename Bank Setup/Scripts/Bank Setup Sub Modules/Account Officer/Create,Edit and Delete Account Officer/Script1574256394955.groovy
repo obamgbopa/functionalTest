@@ -55,7 +55,6 @@ WebUI.click(findTestObject('Object Repository/Account Officer/Page_icon-app/butt
 
 WebUI.verifyTextPresent(('ACO' + String.valueOf(randomNum)) + ' is deleted', false)
 
-WebUI.delay(2)
+WebUI.delay(1)
 
 WebUI.closeBrowser()
-

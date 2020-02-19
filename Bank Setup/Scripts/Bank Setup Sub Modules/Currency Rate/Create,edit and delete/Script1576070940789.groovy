@@ -113,21 +113,21 @@ WebUI.click(findTestObject('Currency Rate/Page_icon-app/button_sentinelStart_ant
 
 WebUI.click(findTestObject('Currency Rate Spy/Page_icon-app/a_ Daily Rate List'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Currency Rate Spy/Page_icon-app/button_Add Rate Details'), FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.click(findTestObject('Currency Rate Spy/Page_icon-app/button_Add Rate Details'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Currency Rate Spy/Page_icon-app/input_Unit Rate_ant-input ant-input'), '1', FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.setText(findTestObject('Currency Rate Spy/Page_icon-app/input_Unit Rate_ant-input ant-input'), '2', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Currency Rate Spy/Page_icon-app/button_Submit_dailyRate'), FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.click(findTestObject('Currency Rate Spy/Page_icon-app/button_Submit_dailyRate'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyTextPresent('Daily Rate is Created', false, FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.verifyTextPresent('Daily Rate is Created', false, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Currency Rate Spy/Page_icon-app/button_Unit Rate_table__dailyRate'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Currency Rate Spy/Page_icon-app/button_Unit Rate_table'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Currency Rate Spy/Page_icon-app/a_Edit_dailyRate'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Currency Rate Spy/Page_icon-app/a_Edit_dailyrateNew'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Currency Rate Spy/Page_icon-app/input_Unit Rate_dailyRate'), '10', FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('Currency Rate Spy/Page_icon-app/input_dailyrateNew'), '10', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Currency Rate Spy/Page_icon-app/button_Edit_dailyRate'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Currency Rate Spy/Page_icon-app/button_Edit_dailyrateNew'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyTextPresent('Daily Rate is Updated', false, FailureHandling.STOP_ON_FAILURE)
 

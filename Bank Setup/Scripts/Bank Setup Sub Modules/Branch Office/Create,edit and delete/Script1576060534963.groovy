@@ -73,7 +73,7 @@ not_run: WebUI.click(findTestObject('Branch Office Spy/Page_icon-app/li_PRC - PR
 
 WebUI.click(findTestObject('Branch Office Spy/Page_icon-app/li_PROFIT_CENTER - null'))
 
-WebUI.click(findTestObject('Branch Office Spy/Page_icon-app/li_SOL - null'))
+not_run: WebUI.click(findTestObject('Branch Office Spy/Page_icon-app/li_SOL - null'))
 
 WebUI.click(findTestObject('Object Repository/Branch Office/Page_icon-app/div_Transaction Details'))
 
@@ -95,7 +95,13 @@ WebUI.click(findTestObject('Object Repository/Branch Office/Page_icon-app/div_Pa
 
 WebUI.setText(findTestObject('Branch Office Spy/Page_icon-app/input_BKE Arrangement_ant-input'), '1908765')
 
-WebUI.click(findTestObject('Object Repository/Branch Office/Page_icon-app/button_Submit'))
+WebUI.click(findTestObject('Branch Office Spy/Page_icon-app/div_EOD Details'))
+
+WebUI.click(findTestObject('Branch Office Spy/Page_icon-app/div_branch_eod'))
+
+WebUI.click(findTestObject('Branch Office Spy/Page_icon-app/li_CUTOFF - CUT OFF'))
+
+WebUI.click(findTestObject('Branch Office Spy/Page_icon-app/button_Submit'))
 
 WebUI.verifyTextPresent('Bank Branch is Created', false)
 

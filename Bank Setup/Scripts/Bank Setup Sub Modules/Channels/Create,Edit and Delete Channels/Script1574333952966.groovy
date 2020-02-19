@@ -50,9 +50,9 @@ WebUI.click(findTestObject('Channels Spy/channel changes 2/Page_icon-app/input_B
 
 WebUI.sendKeys(findTestObject('Channels Spy/channel changes 2/Page_icon-app/input_Branch_ant-input'), Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Channels Spy/channel changes 2/Page_icon-app/button_Search'))
+WebUI.click(findTestObject('Channels Spy/channel changes 2/Page_icon-app/button_Search_New'))
 
-WebUI.click(findTestObject('Channels Spy/channel changes 2/Page_icon-app/button_Select'))
+WebUI.click(findTestObject('Channels Spy/channel changes 2/Page_icon-app/button_Select_New'))
 
 WebUI.click(findTestObject('Object Repository/Channels/Page_icon-app/input_Status_radioGroup'))
 

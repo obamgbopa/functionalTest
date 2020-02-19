@@ -3,11 +3,11 @@
    <description></description>
    <name>span_Bank Setup</name>
    <tag></tag>
-   <elementGuidId>c69b83bd-c5cb-4436-8abf-e478aa857607</elementGuidId>
+   <elementGuidId>9314b868-ef9a-4f0b-beed-c7fe699458fd</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Account Ledger Inquiry'])[1]/following::span[1]</value>
+         <value>//div[@id='__layout']/div/aside/div/nav/ul/li[4]/a/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -45,7 +45,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='__layout']/div/aside/div/nav/ul/li[3]/a/span</value>
+      <value>//div[@id='__layout']/div/aside/div/nav/ul/li[4]/a/span</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -59,7 +59,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Dashboard'])[1]/following::span[3]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Access Control'])[1]/following::span[3]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -73,6 +73,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//li[3]/a/span</value>
+      <value>//li[4]/a/span</value>
    </webElementXpaths>
 </WebElementEntity>
