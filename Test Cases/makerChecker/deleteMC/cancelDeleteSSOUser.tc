@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>cancelDeleteSSOUser</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c6df2f3b-37a8-40ed-94ba-182e31a3f554</testCaseGuid>
+</TestCaseEntity>

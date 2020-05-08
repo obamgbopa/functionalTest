@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>rejectDisableSSOUser</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a2188de6-d164-47ed-9c9c-e674ef4a11c9</testCaseGuid>
+</TestCaseEntity>
