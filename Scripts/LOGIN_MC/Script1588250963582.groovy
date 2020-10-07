@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://192.168.5.46:9090/sso/login')
+WebUI.navigateToUrl('http://192.168.5.46:9090/sso/')
 
 WebUI.setText(findTestObject('Object Repository/LOGIN_MC/Page_sso/input_WELCOME BACK_ant-input ant-input-lg'), 'KELLY')
 

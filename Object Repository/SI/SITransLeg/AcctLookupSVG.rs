@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>AcctLookupSVG</name>
+   <tag></tag>
+   <elementGuidId>4cb790ab-094c-407b-8946-981c7ad8a0af</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//body/div/div/div/div/div/div/div/form/div/div/div/div/div/div/div/div/span/span/span/i[1]//*[local-name()='svg']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

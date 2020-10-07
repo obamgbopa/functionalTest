@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Apr_ant-calendar-year-panel-prev-decade-btn</name>
+   <tag></tag>
+   <elementGuidId>4fa87626-b6c5-4730-8ebe-d519eea0e150</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[2]/div/div[2]/div/div/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>button</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Last decade</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ant-calendar-year-panel-prev-decade-btn</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/div[12]/div[1]/div[@class=&quot;ant-calendar-picker-container ant-calendar-picker-container-placement-bottomLeft&quot;]/div[@class=&quot;ant-calendar ant-calendar-picker-container-content&quot;]/div[@class=&quot;ant-calendar-panel&quot;]/div[@class=&quot;ant-calendar-date-panel&quot;]/div[@class=&quot;ant-calendar-header&quot;]/div[@class=&quot;ant-calendar-year-panel&quot;]/div[1]/div[@class=&quot;ant-calendar-year-panel-header&quot;]/a[@class=&quot;ant-calendar-year-panel-prev-decade-btn&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div[2]/div/div/a</value>
+   </webElementXpaths>
+</WebElementEntity>

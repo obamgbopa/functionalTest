@@ -43,7 +43,7 @@ WebUI.setText(findTestObject('createSSOUser/Page_sso/input_Middle Name_ant-input
 
 WebUI.setText(findTestObject('createSSOUser/Page_sso/input_Last Name_ant-input'), 'JKF' + String.valueOf(randomNum))
 
-WebUI.setText(findTestObject('createSSOUser/Page_sso/input_Username_ant-input'), 'SIMBY' + String.valueOf(randomNum))
+WebUI.setText(findTestObject('createSSOUser/Page_sso/input_Username_ant-input'), 'SIMBYHAT' + String.valueOf(randomNum))
 
 WebUI.click(findTestObject('createSSOUser/Page_sso/div_1'))
 

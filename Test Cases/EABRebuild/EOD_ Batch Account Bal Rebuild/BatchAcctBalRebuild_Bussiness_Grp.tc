@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>BatchAcctBalRebuild_Bussiness_Grp</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cfd986fb-9589-430c-a740-f534a3955497</testCaseGuid>
+</TestCaseEntity>

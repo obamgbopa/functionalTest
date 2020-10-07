@@ -3,7 +3,7 @@
    <description></description>
    <name>input_WELCOME BACK_ant-input ant-input-lg</name>
    <tag></tag>
-   <elementGuidId>38ba3996-4ba3-4c17-8428-5f79ddf949f2</elementGuidId>
+   <elementGuidId>5a465c1f-e179-41ee-be5f-102fa2b19d67</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

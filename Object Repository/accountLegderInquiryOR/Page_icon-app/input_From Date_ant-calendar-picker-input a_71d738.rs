@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_From Date_ant-calendar-picker-input a_71d738</name>
+   <tag></tag>
+   <elementGuidId>0a2973ec-84eb-499f-8bcb-b864a54985c0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='__layout']/div/section/div/div/div[3]/div/div[2]/div/div/div[5]/span/div/div[2]/div/span/span/div/input</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>readonly</name>
+      <type>Main</type>
+      <value>true</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ant-calendar-picker-input ant-input</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;__layout&quot;)/div[@class=&quot;default wrapper wrapper--collapse wrapper--collapse-inner-menu&quot;]/section[@class=&quot;body&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;ant-tabs ant-tabs-top ant-tabs-card ant-tabs-no-animation&quot;]/div[@class=&quot;ant-tabs-content ant-tabs-content-no-animated ant-tabs-top-content ant-tabs-card-content&quot;]/div[@class=&quot;ant-tabs-tabpane ant-tabs-tabpane-active&quot;]/div[2]/div[1]/div[@class=&quot;ant-row-flex&quot;]/div[@class=&quot;ant-col-6&quot;]/span[1]/div[@class=&quot;ant-row ant-form-item&quot;]/div[@class=&quot;ant-form-item-control-wrapper&quot;]/div[@class=&quot;ant-form-item-control&quot;]/span[@class=&quot;ant-form-item-children&quot;]/span[@class=&quot;ant-calendar-picker&quot;]/div[1]/input[@class=&quot;ant-calendar-picker-input ant-input&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='__layout']/div/section/div/div/div[3]/div/div[2]/div/div/div[5]/span/div/div[2]/div/span/span/div/input</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/input</value>
+   </webElementXpaths>
+</WebElementEntity>
